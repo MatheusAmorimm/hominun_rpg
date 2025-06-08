@@ -1,6 +1,6 @@
 # RPG Hominun
 
-## Classes
+## Classes - Feito
 - Personagem
     - Nome
     - Raça
@@ -63,3 +63,12 @@
 
 
 
+## Criar a Lore
+- Criar um lore, focado no mundo medieval, com inspirações em D&D e o que vier na mente.
+- O ideal é que a lore dure em torno de 30min a 1h
+
+## Database
+- Escolher um banco de dados para guardar as informações do usuário, seu save, suas escolhas e os itens.
+
+## Criar Itens/Raças/Classes/Npcs
+- Criar os itens/raças/classes/npcs e guardar no banco.
