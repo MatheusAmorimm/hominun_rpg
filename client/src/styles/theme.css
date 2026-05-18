@@ -1,0 +1,100 @@
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  --font-size: 16px;
+
+  /* Fundos — tons de couro escuro e madeira queimada */
+  --background:         #1a1410;
+  --card:               #2a1f1a;
+  --secondary:          #3d2f24;
+  --muted:              #4a3a2a;
+  --accent:             #5a4332;
+  --border:             #5a4332;
+
+  /* Texto */
+  --foreground:         #e8dcc4;  /* pergaminho claro */
+  --card-foreground:    #e8dcc4;
+  --popover-foreground: #e8dcc4;
+  --secondary-foreground: #e8dcc4;
+  --accent-foreground:  #e8dcc4;
+  --muted-foreground:   #b8a890;
+
+  /* Primária — madeira/couro médio */
+  --primary:            #8b6f47;
+  --primary-foreground: #1a1410;
+
+  /* Gold — usado em títulos, ornamentos, seleção ativa */
+  --gold:               #d4af37;
+
+  /* HP / Mana / Destrutivo */
+  --hp:                 #ff6b6b;
+  --hp-bg:              #8b2f2f;
+  --mana:               #6bb6ff;
+  --mana-bg:            #4a7c8b;
+  --destructive:        #8b2f2f;
+  --destructive-foreground: #ffe8e8;
+
+  /* Inputs */
+  --input:              transparent;
+  --input-background:   #3d2f24;
+  --ring:               #8b6f47;
+  --popover:            #2a1f1a;
+
+  /* Radius — bordas retas para estética medieval */
+  --radius: 0rem;
+}
+
+@theme inline {
+  --color-background:        var(--background);
+  --color-foreground:        var(--foreground);
+  --color-card:              var(--card);
+  --color-card-foreground:   var(--card-foreground);
+  --color-popover:           var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary:           var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary:         var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted:             var(--muted);
+  --color-muted-foreground:  var(--muted-foreground);
+  --color-accent:            var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive:       var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border:            var(--border);
+  --color-input:             var(--input);
+  --color-ring:              var(--ring);
+  --color-gold:              var(--gold);
+  --color-hp:                var(--hp);
+  --color-hp-bg:             var(--hp-bg);
+  --color-mana:              var(--mana);
+  --color-mana-bg:           var(--mana-bg);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: var(--radius);
+  --radius-lg: var(--radius);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Crimson Text', serif;
+    font-size: var(--font-size);
+  }
+
+  h1, h2, h3, h4 {
+    font-family: 'Cinzel', serif;
+    font-weight: 500;
+    line-height: 1.4;
+  }
+
+  h1 { font-size: 1.75rem; }
+  h2 { font-size: 1.375rem; }
+  h3 { font-size: 1.125rem; }
+  h4 { font-size: 1rem; }
+
+  button, label { font-weight: 500; }
+}

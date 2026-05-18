@@ -1,0 +1,42 @@
+{
+  "name": "hominun-rpg-client",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "tauri": "tauri"
+  },
+  "dependencies": {
+    "@radix-ui/react-dialog": "1.1.6",
+    "@radix-ui/react-scroll-area": "1.2.3",
+    "@radix-ui/react-tabs": "1.1.3",
+    "@radix-ui/react-tooltip": "1.1.8",
+    "@tauri-apps/api": "2",
+    "class-variance-authority": "0.7.1",
+    "clsx": "2.1.1",
+    "lucide-react": "0.487.0",
+    "motion": "12.23.24",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "tailwind-merge": "3.2.0",
+    "tw-animate-css": "1.3.8",
+    "zustand": "5.0.5"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "4.1.12",
+    "@tauri-apps/cli": "2",
+    "@types/react": "18.3.23",
+    "@types/react-dom": "18.3.7",
+    "@vitejs/plugin-react": "4.7.0",
+    "tailwindcss": "4.1.12",
+    "typescript": "5.8.3",
+    "vite": "6.3.5"
+  },
+  "peerDependencies": {
+    "react": "18.3.1",
+    "react-dom": "18.3.1"
+  }
+}
