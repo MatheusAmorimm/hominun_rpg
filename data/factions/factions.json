@@ -1,0 +1,163 @@
+[
+  {
+    "id": "triumvirate",
+    "name": "O Triumvirato",
+    "type": "political",
+    "alignment": "antagonist",
+    "goals": [
+      "Consolidar o controle político de Corcilium nas mãos das três famílias fundadoras",
+      "Abolir os direitos de elfos e anões dentro do Reino de Hominum",
+      "Monopolizar o comércio de armas e suprimentos militares",
+      "Suprimir qualquer invocador de origem plebeia que represente ameaça ao equilíbrio de poder"
+    ],
+    "leader_npc_id": "lorde_faversham",
+    "member_npc_ids": [
+      "lorde_faversham",
+      "arcturo_faversham",
+      "lorde_cavell",
+      "didric_cavell",
+      "lorde_forsyth"
+    ],
+    "rival_faction_ids": ["inquisition", "elven_allies", "orc_shamans"],
+    "allied_faction_ids": ["pinkertons"],
+    "reputation_thresholds": {
+      "hostile": -50,
+      "unfriendly": -20,
+      "neutral": 0,
+      "friendly": 30,
+      "honored": 60
+    },
+    "available_in_acts": [1, 2, 3, 4],
+    "narrative_flags": {
+      "triumvirate_started": true,
+      "triggers_pelego_variant": true
+    },
+    "lore": "O Triumvirato é a aliança política mais poderosa de Hominum, formada pelas famílias Faversham, Cavell e Forsyth. Criado para estabilizar o reino após a Era das Guerras Éter, o Triumvirato rapidamente se tornou um instrumento de controle oligárquico. Seus membros acreditam que apenas invocadores de sangue nobre têm a disciplina e o direito de wieldar o poder demoníaco. A ascensão de qualquer plebeu como invocador é vista como uma ameaça existencial à ordem que construíram."
+  },
+  {
+    "id": "inquisition",
+    "name": "A Inquisição",
+    "type": "military",
+    "alignment": "complex",
+    "goals": [
+      "Localizar e registrar todo invocador sem título nobiliárquico em Hominum",
+      "Determinar se invocadores plebeus representam ameaça ou oportunidade para o reino",
+      "Servir à coroa, mesmo quando isso conflita com os interesses do Triumvirato",
+      "Conter o avanço de demônios selvagens nas fronteiras"
+    ],
+    "leader_npc_id": "alfric_vyle",
+    "member_npc_ids": [
+      "alfric_vyle"
+    ],
+    "rival_faction_ids": ["triumvirate"],
+    "allied_faction_ids": [],
+    "reputation_thresholds": {
+      "hostile": -50,
+      "unfriendly": -20,
+      "neutral": 0,
+      "friendly": 30,
+      "honored": 60
+    },
+    "available_in_acts": [1, 2, 3],
+    "narrative_flags": {
+      "inquisition_aware_of_player": false,
+      "inquisition_hunting_player": false
+    },
+    "lore": "A Inquisição foi criada por Alfric Vyle a mando da coroa para rastrear invocadores de origem plebeia após relatos de que a capacidade de invocar estava se disseminando além das famílias nobres. Diferente do que o Triumvirato esperava, Alfric não executa plebeus com o dom — ele os avalia. Sua motivação real permanece obscura: alguns dizem que busca construir um exército leal à coroa, não às famílias. A Inquisição é temida, mas não é necessariamente inimiga de um invocador plebeu que saiba se portar."
+  },
+  {
+    "id": "pinkertons",
+    "name": "Os Pinkertons",
+    "type": "military",
+    "alignment": "neutral",
+    "goals": [
+      "Manter a ordem civil em Corcilium e nas cidades sob jurisdição real",
+      "Executar mandados emitidos pelo Triumvirato mediante pagamento",
+      "Proteger o monopólio comercial das famílias fundadoras",
+      "Recrutar combatentes capazes independente de origem"
+    ],
+    "leader_npc_id": "capitao_harwick",
+    "member_npc_ids": [
+      "capitao_harwick"
+    ],
+    "rival_faction_ids": ["orc_shamans"],
+    "allied_faction_ids": ["triumvirate"],
+    "reputation_thresholds": {
+      "hostile": -50,
+      "unfriendly": -20,
+      "neutral": 0,
+      "friendly": 30,
+      "honored": 60
+    },
+    "available_in_acts": [1, 2, 3, 4],
+    "narrative_flags": {
+      "pinkertons_contract_active": false
+    },
+    "lore": "Os Pinkertons são a força militar civil de Hominum — mercenários institucionalizados que atuam como polícia, guarda-costas e braço executor do poder estabelecido. Recrutam com base em habilidade, não em título, o que os torna uma das poucas instituições onde um plebeu pode ascender. Contudo, sua lealdade é comprada, não juramentada: quem pagar mais recebe sua obediência. Jogadores com boa reputação podem contratar serviços Pinkerton ou até recrutar membros como aliados temporários."
+  },
+  {
+    "id": "orc_shamans",
+    "name": "Os Xamãs Orcs",
+    "type": "tribal",
+    "alignment": "complex",
+    "goals": [
+      "Preservar o conhecimento ancestral de invocação orc transmitido oralmente pelos xamãs",
+      "Reconquistar territórios da Selva Orquica tomados pelo avanço humano",
+      "Resistir à integração forçada imposta pelo Reino de Hominum",
+      "Proteger os ritos de vínculo demoníaco que diferenciam a tradição orc da técnica nobre humana"
+    ],
+    "leader_npc_id": "shaman_graakul",
+    "member_npc_ids": [
+      "shaman_graakul",
+      "gorak_thorsager"
+    ],
+    "rival_faction_ids": ["triumvirate", "pinkertons"],
+    "allied_faction_ids": ["elven_allies"],
+    "reputation_thresholds": {
+      "hostile": -50,
+      "unfriendly": -20,
+      "neutral": 0,
+      "friendly": 30,
+      "honored": 60
+    },
+    "available_in_acts": [2, 3, 4],
+    "narrative_flags": {
+      "orc_rite_completed": false,
+      "player_has_orc_blessing": false
+    },
+    "lore": "Os Xamãs Orcs são os guardiões da tradição de invocação mais antiga de Hominum — anterior às academias, anterior aos grimórios nobres. Para um orc, o vínculo com um demônio não é técnico, é espiritual: uma negociação sagrada entre mundos. Eles desprezam a arrogância humana de 'domesticar' demônios como ferramentas de guerra. Para jogadores humanos, ganhar a confiança dos xamãs exige provar respeito pela tradição; para jogadores orcs, esta facção pode ser a fonte de poder mais profunda do jogo, desbloqueando técnicas de vínculo indisponíveis em qualquer academia."
+  },
+  {
+    "id": "elven_allies",
+    "name": "Os Aliados Élficos",
+    "type": "political",
+    "alignment": "complex",
+    "goals": [
+      "Restaurar a presença élfica como força política reconhecida em Hominum",
+      "Proteger Sylvia e outros elfos invocadores que surgem após séculos de extinção do dom élfico",
+      "Estabelecer uma aliança formal entre a Frente Élfica e facções humanas simpáticas",
+      "Investigar por que o gene de invocação élfico está ressurgindo agora"
+    ],
+    "leader_npc_id": "sylvia",
+    "member_npc_ids": [
+      "sylvia",
+      "lorde_essex"
+    ],
+    "rival_faction_ids": ["triumvirate", "inquisition"],
+    "allied_faction_ids": ["orc_shamans"],
+    "reputation_thresholds": {
+      "hostile": -50,
+      "unfriendly": -20,
+      "neutral": 0,
+      "friendly": 30,
+      "honored": 60
+    },
+    "available_in_acts": [2, 3, 4],
+    "narrative_flags": {
+      "first_elf_summoner_after_extinction": true,
+      "elven_front_alliance_formed": false,
+      "sylvia_trust_revealed": false
+    },
+    "lore": "Os Aliados Élficos não são uma nação nem um exército — são uma rede de indivíduos reunidos ao redor de Sylvia, a primeira elfa invocadora em gerações. O ressurgimento do dom élfico é tratado como milagre por alguns e como ameaça por outros, especialmente pelo Triumvirato, que teme qualquer poder que não possa controlar. Lorde Essex, um humano com laços históricos à Frente Élfica, age como mediador político enquanto Sylvia navega um mundo que a vê como anomalia. A facção cresce na sombra, construindo alianças onde o Triumvirato enxerga apenas fracos."
+  }
+]

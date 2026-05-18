@@ -1,0 +1,284 @@
+[
+  {
+    "id": "demonic_bond",
+    "name": "Vínculo Demoníaco",
+    "primary_archetype": "pure_summoner",
+    "nodes": [
+      {
+        "id": "bond_instinct",
+        "name": "Chamado Instintivo",
+        "tier": 1,
+        "min_demon_level": 1,
+        "narrative_milestone": "first_demon_summoned",
+        "mana_source": "demon",
+        "effects": {
+          "summon_mana_cost_reduction": 2,
+          "narrative_flag": "bond_instinct_unlocked"
+        },
+        "description": "O primeiro vínculo desperta um senso primitivo de presença demoníaca. O custo de mana para invocar seu demônio principal é reduzido em 2."
+      },
+      {
+        "id": "bond_empathy",
+        "name": "Empatia Demoníaca",
+        "tier": 1,
+        "min_demon_level": 2,
+        "narrative_milestone": "arcturo_temperament_lesson",
+        "mana_source": "player",
+        "effects": {
+          "can_read_demon_temperament": true,
+          "affinity_gain_on_correct_approach": 3,
+          "narrative_flag": "bond_empathy_unlocked"
+        },
+        "description": "Após o ensinamento de Arcturo sobre temperamento demoníaco, você aprende a interpretar os sinais emocionais do seu demônio. Escolhas de abordagem corretas rendem +3 de afinidade."
+      },
+      {
+        "id": "bond_silent_channel",
+        "name": "Canal Silencioso",
+        "tier": 2,
+        "min_demon_level": 6,
+        "narrative_milestone": "arcturo_mental_bond_training",
+        "mana_source": "both",
+        "effects": {
+          "order_mana_cost_reduction": 3,
+          "silent_order_range_bonus": true,
+          "narrative_flag": "bond_silent_channel_unlocked"
+        },
+        "description": "O treinamento avançado com Arcturo refina o vínculo mental. Ordens ao demônio custam 3 de mana a menos e podem ser transmitidas mesmo em ambientes de silêncio forçado."
+      },
+      {
+        "id": "bond_reinforced",
+        "name": "Vínculo Fortalecido",
+        "tier": 2,
+        "min_demon_level": 8,
+        "narrative_milestone": "affinity_50_any_demon",
+        "mana_source": "player",
+        "effects": {
+          "affinity_decay_resistance": true,
+          "max_affinity_bonus": 10,
+          "narrative_flag": "bond_reinforced_unlocked"
+        },
+        "description": "Ao alcançar afinidade 50 com um demônio, o vínculo se aprofunda estruturalmente. O teto de afinidade aumenta em 10 e a afinidade decai mais lentamente após combates difíceis."
+      },
+      {
+        "id": "bond_full_sync",
+        "name": "Sincronização Plena",
+        "tier": 3,
+        "min_demon_level": 14,
+        "narrative_milestone": "affinity_80_any_demon",
+        "mana_source": "demon",
+        "effects": {
+          "sync_damage_bonus_percent": 20,
+          "demon_hp_shared_warning": true,
+          "narrative_flag": "bond_full_sync_unlocked"
+        },
+        "description": "A sincronia total com um demônio amplifica os ataques em 20% quando a afinidade está acima de 80. Em contrapartida, dano recebido pelo demônio causa 1/4 de dano reflexo ao invocador."
+      },
+      {
+        "id": "bond_war_command",
+        "name": "Comando de Guerra",
+        "tier": 3,
+        "min_demon_level": 16,
+        "narrative_milestone": "survived_battle_with_two_demons",
+        "mana_source": "demon",
+        "effects": {
+          "max_active_demons": 2,
+          "multi_demon_order_cost": 5,
+          "narrative_flag": "bond_war_command_unlocked"
+        },
+        "description": "Após sobreviver a uma batalha controlando dois demônios simultaneamente, você domina a divisão da atenção mental. Pode manter 2 demônios ativos. Ordens simultâneas custam 5 de mana total dos demônios."
+      }
+    ]
+  },
+  {
+    "id": "personal_combat",
+    "name": "Combate Pessoal",
+    "primary_archetype": "battle_mage",
+    "nodes": [
+      {
+        "id": "combat_stance",
+        "name": "Postura de Combate",
+        "tier": 1,
+        "min_demon_level": 1,
+        "narrative_milestone": "first_combat_victory",
+        "mana_source": "player",
+        "effects": {
+          "initiative_bonus": 2,
+          "first_round_ac_bonus": 1,
+          "narrative_flag": "combat_stance_unlocked"
+        },
+        "description": "A primeira vitória em combate forja reflexos básicos. +2 de iniciativa e +1 de CA no primeiro turno de qualquer combate."
+      },
+      {
+        "id": "combat_endurance",
+        "name": "Resistência Física",
+        "tier": 1,
+        "min_demon_level": 3,
+        "narrative_milestone": "survived_below_10_hp",
+        "mana_source": "player",
+        "effects": {
+          "hp_bonus_flat": 10,
+          "death_save_bonus": 2,
+          "narrative_flag": "combat_endurance_unlocked"
+        },
+        "description": "Sobreviver à beira da morte tempera o corpo. +10 de HP máximo e +2 nos saves de morte."
+      },
+      {
+        "id": "combat_disarm",
+        "name": "Técnica de Desarmamento",
+        "tier": 2,
+        "min_demon_level": 6,
+        "narrative_milestone": "pinkerton_or_arcturo_combat_training",
+        "mana_source": "player",
+        "effects": {
+          "disarm_maneuver_available": true,
+          "disarm_dc": 13,
+          "narrative_flag": "combat_disarm_unlocked"
+        },
+        "description": "Treino formal com Pinkertons ou Arcturo ensina a técnica de desarmamento. Uma vez por turno, pode tentar desarmar um oponente (save STR CD 13)."
+      },
+      {
+        "id": "combat_reflexes",
+        "name": "Reflexos Aguçados",
+        "tier": 2,
+        "min_demon_level": 8,
+        "narrative_milestone": "won_combat_without_being_hit",
+        "mana_source": "player",
+        "effects": {
+          "initiative_bonus": 3,
+          "opportunity_attack_available": true,
+          "narrative_flag": "combat_reflexes_unlocked"
+        },
+        "description": "Vencer um combate sem ser atingido desperta reflexos superiores. +3 de iniciativa adicional e ataques de oportunidade passam a estar disponíveis."
+      },
+      {
+        "id": "combat_combined_strike",
+        "name": "Golpe Combinado",
+        "tier": 3,
+        "min_demon_level": 13,
+        "narrative_milestone": "synchronized_demon_attack_affinity_60",
+        "mana_source": "both",
+        "effects": {
+          "combined_attack_available": true,
+          "combined_damage_bonus_percent": 15,
+          "requires_affinity_min": 60,
+          "narrative_flag": "combat_combined_strike_unlocked"
+        },
+        "description": "Após sincronizar um ataque com seu demônio (afinidade 60+), aprende a coordenar golpes simultâneos. Um ataque combinado por rodada causa +15% de dano total. Requer afinidade mínima de 60 no momento do uso."
+      },
+      {
+        "id": "combat_champion",
+        "name": "Campeão de Arena",
+        "tier": 3,
+        "min_demon_level": 15,
+        "narrative_milestone": "won_corcilium_arena_challenge",
+        "mana_source": "player",
+        "effects": {
+          "intimidation_in_combat": true,
+          "intimidation_dc": 14,
+          "reputation_bonus_pinkertons": 10,
+          "narrative_flag": "combat_champion_unlocked"
+        },
+        "description": "A vitória na arena de Corcilium traz reconhecimento. Pode usar Intimidação como ação bônus em combate (save SAB CD 14: alvo perde reação no turno). +10 de reputação com os Pinkertons."
+      }
+    ]
+  },
+  {
+    "id": "ether_knowledge",
+    "name": "Conhecimento do Éter",
+    "primary_archetype": "ether_explorer",
+    "nodes": [
+      {
+        "id": "ether_foxfire",
+        "name": "Foxfire",
+        "tier": 1,
+        "min_demon_level": 1,
+        "narrative_milestone": "foxfire_lesson_arcturo_or_grimoire",
+        "mana_source": "player",
+        "effects": {
+          "spell_foxfire_available": true,
+          "foxfire_damage_dice": "1d4",
+          "foxfire_damage_type": "fire",
+          "foxfire_mana_cost": 2,
+          "narrative_flag": "ether_foxfire_unlocked"
+        },
+        "description": "O feitiço mais básico dos invocadores. Uma chama pálida de Éter que causa 1d4 de dano de fogo. Aprendida com Arcturo ou em grimório introdutório. Consome 2 de mana do jogador."
+      },
+      {
+        "id": "ether_sense",
+        "name": "Sentido do Éter",
+        "tier": 1,
+        "min_demon_level": 2,
+        "narrative_milestone": "first_ether_region_entry",
+        "mana_source": "player",
+        "effects": {
+          "detect_ether_presence": true,
+          "detect_range_meters": 30,
+          "narrative_flag": "ether_sense_unlocked"
+        },
+        "description": "A primeira exposição ao Éter calibra os sentidos do invocador. Pode detectar presença de demônios e fluxos de Éter em um raio de 30 metros."
+      },
+      {
+        "id": "ether_resistance",
+        "name": "Resistência ao Éter",
+        "tier": 2,
+        "min_demon_level": 5,
+        "narrative_milestone": "survived_10_turns_in_ether",
+        "mana_source": "player",
+        "effects": {
+          "ether_survival_turns_bonus": 5,
+          "ether_damage_reduction": 2,
+          "narrative_flag": "ether_resistance_unlocked"
+        },
+        "description": "Após sobreviver 10 turnos na atmosfera tóxica do Éter, o corpo desenvolve resiliência. +5 turnos de sobrevivência sem folha amarela e redução de 2 no dano por turno de exposição."
+      },
+      {
+        "id": "ether_foxfire_advanced",
+        "name": "Foxfire Avançado",
+        "tier": 2,
+        "min_demon_level": 9,
+        "narrative_milestone": "arcturo_second_training_module",
+        "mana_source": "player",
+        "effects": {
+          "foxfire_damage_dice": "2d6",
+          "foxfire_mana_cost": 4,
+          "foxfire_aoe_available": true,
+          "foxfire_aoe_radius_meters": 3,
+          "narrative_flag": "ether_foxfire_advanced_unlocked"
+        },
+        "description": "O segundo módulo de treinamento de Arcturo eleva o Foxfire para 2d6 de dano e adiciona variante em área (raio 3m). O custo sobe para 4 de mana do jogador. Substitui o Foxfire básico."
+      },
+      {
+        "id": "ether_navigation",
+        "name": "Navegação do Éter",
+        "tier": 3,
+        "min_demon_level": 12,
+        "narrative_milestone": "completed_ether_traversal_without_yellow_leaf",
+        "mana_source": "demon",
+        "effects": {
+          "ether_survival_indefinite": true,
+          "ether_movement_penalty_removed": true,
+          "narrative_flag": "ether_navigation_unlocked"
+        },
+        "description": "Após completar uma travessia do Éter sem folha amarela, o invocador aprende a canalizar mana do demônio para criar uma bolha protetora. Sobrevivência indefinida no Éter enquanto o demônio tiver mana. Remove penalidade de movimento no Éter."
+      },
+      {
+        "id": "ether_blast",
+        "name": "Explosão de Éter",
+        "tier": 3,
+        "min_demon_level": 17,
+        "narrative_milestone": "orc_shamans_rite_completed",
+        "mana_source": "both",
+        "effects": {
+          "spell_ether_blast_available": true,
+          "ether_blast_damage_dice": "4d8",
+          "ether_blast_damage_type": "ether",
+          "ether_blast_mana_cost_player": 5,
+          "ether_blast_mana_cost_demon": 8,
+          "ether_blast_save": "CON CD 16",
+          "narrative_flag": "ether_blast_unlocked"
+        },
+        "description": "O rito dos Xamãs Orcs revela como canalizar energia bruta do Éter através do vínculo demoníaco. Uma explosão devastadora de 4d8 de dano de Éter em área. Consome 5 de mana do jogador e 8 de mana do demônio. Save CON CD 16 para metade do dano."
+      }
+    ]
+  }
+]

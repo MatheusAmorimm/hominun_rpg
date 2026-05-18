@@ -1,0 +1,135 @@
+[
+  {
+    "id": "pelego",
+    "name": "Pelego",
+    "description": "Pequeno vilarejo rural encravado próximo às montanhas Presa de Urso. Após o início do Triunvirato, transformou-se em cidade-prisão sob o comando do Lorde Didric Cavell.",
+    "type": "rural",
+    "danger_level": "low",
+    "available_in_acts": [1, 2],
+    "connected_regions": ["corcilium", "elven_front"],
+    "npcs": [],
+    "quests": [],
+    "scene_image": "regions/pelego.png",
+    "music_track": "ambient_pelego",
+    "narrative_flags_required": {},
+    "special_properties": {
+      "prison_city_variant": {
+        "flag_trigger": "triumvirate_started",
+        "danger_level_override": "high",
+        "description_override": "Pelego não é mais um vilarejo. Agora é uma prisão a céu aberto — e Didric Cavell é seu carcereiro."
+      }
+    },
+    "lore": "Pelego é o tipo de lugar que o mundo esquece — e seus moradores preferem assim. Encostada nas montanhas Presa de Urso, é uma comunidade simples de fazendeiros, ferreiros e gente que não pede muito da vida. Foi aqui que tudo começou. Foi aqui que Didric Cavell mostrou sua verdadeira face."
+  },
+  {
+    "id": "corcilium",
+    "name": "Corcilium",
+    "description": "A grande metrópole de Hominum. Sede da Academia de Batalha Vocans, do rei Harold e do coração político do reino.",
+    "type": "urban",
+    "danger_level": "safe",
+    "available_in_acts": [1, 2, 3, 4],
+    "connected_regions": ["pelego", "raleighshire", "orc_jungle"],
+    "npcs": [],
+    "quests": [],
+    "scene_image": "regions/corcilium.png",
+    "music_track": "ambient_corcilium",
+    "narrative_flags_required": {},
+    "special_properties": {
+      "vocans_academy_present": true,
+      "king_harold_present": true,
+      "dwarf_founded": true
+    },
+    "lore": "Corcilium foi erguida pelos anões muito antes de os humanos saberem que existia. Quando os humanos chegaram, os anões os receberam — e lhes ensinaram o que sabiam sobre pedra, ferro e poder. Hoje é o coração de Hominum: barulhenta, política, implacável. Vocans fica aqui. O rei Harold fica aqui. As decisões que mudam o mundo são tomadas aqui."
+  },
+  {
+    "id": "raleighshire",
+    "name": "Raleighshire",
+    "description": "Terras do Lorde Fletcher Raleigh. Hoje abriga os antigos moradores de Pelego, o ferreiro Berdon e parte da família Thorsager.",
+    "type": "rural",
+    "danger_level": "low",
+    "available_in_acts": [2, 3, 4],
+    "connected_regions": ["corcilium"],
+    "npcs": [],
+    "quests": [],
+    "scene_image": "regions/raleighshire.png",
+    "music_track": "ambient_raleighshire",
+    "narrative_flags_required": {
+      "act_2_started": true
+    },
+    "special_properties": {
+      "refugee_settlement": true,
+      "berdon_present": true,
+      "thorsager_family_present": true
+    },
+    "lore": "Raleighshire não é um lugar grandioso. É um refúgio. Os que fugiram de Pelego encontraram aqui um novo começo sob a proteção do Lorde Raleigh. Berdon ainda bate o martelo. A família Thorsager guarda suas próprias histórias. E a terra, por hora, está em paz."
+  },
+  {
+    "id": "elven_front",
+    "name": "Frente Élfica",
+    "description": "A grande floresta élfica, próxima a Pelego, fazendo fronteira com a Selva Órquica. Os elfos habitam essas terras há séculos e foram eles que ensinaram os humanos a conjurarem demônios.",
+    "type": "frontier",
+    "danger_level": "medium",
+    "available_in_acts": [2, 3],
+    "connected_regions": ["pelego", "orc_jungle"],
+    "npcs": [],
+    "quests": [],
+    "scene_image": "regions/elven_front.png",
+    "music_track": "ambient_elven_front",
+    "narrative_flags_required": {
+      "act_2_started": true
+    },
+    "special_properties": {
+      "elven_territory": true,
+      "summoning_origin": true,
+      "orc_border": true
+    },
+    "lore": "Muito antes de Vocans existir, os elfos já conjuravam demônios nessa floresta. Eles nunca pediram crédito por isso — e raramente o dão de bom grado. A Frente Élfica é bela e silenciosa, mas esteja certo: cada passo seu é observado. E a fronteira com a Selva Órquica nunca está verdadeiramente quieta."
+  },
+  {
+    "id": "orc_jungle",
+    "name": "Selva Órquica",
+    "description": "Selva densa que rodeia todas as regiões de Hominum. Lar dos Orcs e de seus xamãs. Desde a chegada dos humanos, os Orcs travam incursões e guerras constantes.",
+    "type": "wilderness",
+    "danger_level": "high",
+    "available_in_acts": [3, 4],
+    "connected_regions": ["elven_front", "corcilium"],
+    "npcs": [],
+    "quests": [],
+    "scene_image": "regions/orc_jungle.png",
+    "music_track": "ambient_orc_jungle",
+    "narrative_flags_required": {
+      "act_3_started": true
+    },
+    "special_properties": {
+      "orc_territory": true,
+      "shaman_presence": true,
+      "war_zone_potential": true
+    },
+    "lore": "A Selva Órquica não tem fronteiras claras — ela simplesmente aparece onde os mapas terminam. Os Orcs não precisam de castelos ou academias. Eles têm a selva, os xamãs e séculos de raiva acumulada. Para um Orc jogador, este é o único lugar em Hominum onde seu povo não é o inimigo."
+  },
+  {
+    "id": "ether",
+    "name": "Éter",
+    "description": "A dimensão onde os demônios vivem. Atmosfera completamente hostil a seres vivos. Para sobreviver, é necessário consumir as folhas amarelas encontradas nas zonas vulcânicas.",
+    "type": "ether",
+    "danger_level": "extreme",
+    "available_in_acts": [1, 2, 3, 4],
+    "connected_regions": ["pelego", "corcilium", "raleighshire", "elven_front", "orc_jungle"],
+    "npcs": [],
+    "quests": [],
+    "scene_image": "regions/ether.png",
+    "music_track": "ambient_ether",
+    "narrative_flags_required": {
+      "has_first_demon": true
+    },
+    "special_properties": {
+      "toxic_atmosphere": true,
+      "survival_item": "yellow_leaf",
+      "yellow_leaf_source": "volcanic_zones",
+      "procedural": true,
+      "no_map": true,
+      "demon_native": true
+    },
+    "lore": "O Éter não é um lugar. É a ausência de qualquer lugar que você conhece. O ar mata — lentamente, com crueldade, sem apressar. Criaturas que nunca viram a luz de Hominum habitam aqui. As folhas amarelas que brotam nas bordas dos vulcões são a única razão pela qual invocadores retornam. Às vezes."
+  }
+]

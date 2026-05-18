@@ -1,0 +1,31 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "archetype",
+  "title": "Archetype",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "name", "description", "stat_bonuses", "starting_spells", "lore"],
+  "properties": {
+    "id": { "type": "string", "minLength": 1 },
+    "name": { "type": "string", "minLength": 1 },
+    "description": { "type": "string" },
+    "stat_bonuses": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "str": { "type": "integer" },
+        "dex": { "type": "integer" },
+        "con": { "type": "integer" },
+        "int": { "type": "integer" },
+        "wis": { "type": "integer" },
+        "cha": { "type": "integer" }
+      }
+    },
+    "starting_spells": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "IDs de magias disponíveis desde o início. Guerreiro Mago começa com foxfire."
+    },
+    "lore": { "type": "string", "minLength": 1 }
+  }
+}

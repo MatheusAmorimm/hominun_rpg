@@ -1,0 +1,75 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "npc",
+  "title": "NPC",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id","name","race","roles","alignment","status","lore"],
+  "properties": {
+    "id":    { "type": "string", "minLength": 1 },
+    "name":  { "type": "string", "minLength": 1 },
+    "title": { "type": "string", "description": "Título formal. Ex: 'Lorde', 'Rei', 'Professor'." },
+    "family_id": {
+      "type": "string",
+      "description": "Referência à família. Ex: 'raleigh', 'forsyth', 'thorsager'."
+    },
+    "race": {
+      "type": "string",
+      "enum": ["human","elf","dwarf","orc"]
+    },
+    "roles": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "enum": ["lord","lady","king","queen","summoner","teacher",
+                 "warrior","student","civilian","spy","unknown"]
+      },
+      "description": "Um NPC pode ter múltiplos papéis. Ex: Arcturo é teacher + summoner."
+    },
+    "alignment": {
+      "type": "string",
+      "enum": ["ally","neutral","antagonist","complex"],
+      "description": "complex = motivações conflitantes ou que mudam com as escolhas do jogador."
+    },
+    "is_rival": {
+      "type": "boolean",
+      "description": "true = aparece como rival narrativo direto do jogador em momentos específicos."
+    },
+    "faction_ids": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "IDs das facções às quais este NPC pertence (definidas no passo 7)."
+    },
+    "demon_species_ids": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "IDs das espécies de demônios deste NPC (referência a creatures.json)."
+    },
+    "army_name": {
+      "type": "string",
+      "description": "Nome do exército pessoal. Somente para chefes de família com força militar própria."
+    },
+    "status": {
+      "type": "string",
+      "enum": ["alive","deceased","missing","unknown"]
+    },
+    "available_in_acts": {
+      "type": "array",
+      "items": { "type": "integer", "minimum": 1, "maximum": 4 },
+      "uniqueItems": true
+    },
+    "region_ids": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Regiões onde este NPC pode ser encontrado."
+    },
+    "narrative_flags": {
+      "type": "object",
+      "additionalProperties": true,
+      "description": "Flags que este NPC ativa ou requer."
+    },
+    "lore": { "type": "string", "minLength": 1 }
+  }
+}

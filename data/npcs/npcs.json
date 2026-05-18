@@ -1,0 +1,402 @@
+[
+  {
+    "id": "zacarias_forsyth",
+    "name": "Zacarias Forsyth",
+    "title": "Lorde",
+    "family_id": "forsyth",
+    "race": "human",
+    "roles": ["lord", "summoner"],
+    "alignment": "antagonist",
+    "is_rival": false,
+    "faction_ids": ["triumvirate"],
+    "demon_species_ids": ["wendigo"],
+    "army_name": "Fúria dos Forsyth",
+    "status": "alive",
+    "available_in_acts": [2, 3, 4],
+    "region_ids": ["corcilium"],
+    "narrative_flags": {
+      "triumvirate_member": true,
+      "anti_dwarf_agenda": true,
+      "anti_elf_agenda": true
+    },
+    "lore": "Zacarias Forsyth é a cabeça da família Forsyth e um dos três pilares do Triunvirato. Frio, calculista e absolutamente convicto de que elfos e anões representam uma ameaça à supremacia humana em Hominum. Seu Wendigo é o espelho de sua personalidade — enorme, fedorento e impossível de ignorar. A Fúria dos Forsyth não é apenas um exército: é uma demonstração de poder."
+  },
+  {
+    "id": "tarquim_forsyth",
+    "name": "Tarquim Forsyth",
+    "family_id": "forsyth",
+    "race": "human",
+    "roles": ["summoner", "student"],
+    "alignment": "antagonist",
+    "is_rival": true,
+    "faction_ids": ["triumvirate"],
+    "demon_species_ids": ["hidra"],
+    "status": "alive",
+    "available_in_acts": [1, 2, 3, 4],
+    "region_ids": ["corcilium"],
+    "narrative_flags": {
+      "vocans_student": true,
+      "triumvirate_heir": true
+    },
+    "lore": "Filho de Zacarias Forsyth. Tarquim carrega o peso do nome da família como uma armadura — e como um grilhão. Em Vocans, é arrogante, competente e perigoso. Sua Hidra com três cabeças é uma metáfora perfeita de quem ele é: múltiplas frentes de ataque, impossível de prever por onde vem o golpe."
+  },
+  {
+    "id": "isadora_forsyth",
+    "name": "Isadora Forsyth",
+    "family_id": "forsyth",
+    "race": "human",
+    "roles": ["lady", "summoner"],
+    "alignment": "complex",
+    "is_rival": false,
+    "faction_ids": ["triumvirate"],
+    "demon_species_ids": ["felideo"],
+    "status": "alive",
+    "available_in_acts": [2, 3, 4],
+    "region_ids": ["corcilium"],
+    "narrative_flags": {
+      "triumvirate_member": true,
+      "felideo_tamil": true
+    },
+    "lore": "Isadora Forsyth é uma figura ambígua. Membro do Triunvirato por nascimento, mas nem sempre em harmonia com os métodos de seu pai. Seu Felídeo Tamil — um leopardino bípede — reflete sua natureza: elegante, imprevisível e potencialmente letal. Dependendo das escolhas do jogador, pode tornar-se aliada ou inimiga implacável."
+  },
+  {
+    "id": "lorde_cavendish",
+    "name": "Lorde Cavendish",
+    "title": "Lorde",
+    "family_id": "cavendish",
+    "race": "human",
+    "roles": ["lord", "civilian"],
+    "alignment": "neutral",
+    "is_rival": false,
+    "faction_ids": [],
+    "demon_species_ids": [],
+    "status": "alive",
+    "available_in_acts": [2, 3, 4],
+    "region_ids": ["corcilium"],
+    "narrative_flags": {
+      "family_destroyed": true,
+      "commoner_origin": true,
+      "no_summoner_heirs": true
+    },
+    "lore": "O único sobrevivente da família Cavendish. Era plebeu antes de ser elevado à nobreza — e ainda carrega isso consigo. Após a missão que custou todos os invocadores de sua linhagem, sobrou apenas ele: sem demônios, sem exército, sem herdeiros conjuradores. Um nobre sem poder real, tentando manter a aparência de relevância em Corcilium."
+  },
+  {
+    "id": "edmund_raleigh",
+    "name": "Edmund Raleigh",
+    "title": "Lorde",
+    "family_id": "raleigh",
+    "race": "human",
+    "roles": ["lord", "summoner"],
+    "alignment": "ally",
+    "is_rival": false,
+    "faction_ids": [],
+    "demon_species_ids": [],
+    "army_name": "As Raposas",
+    "status": "alive",
+    "available_in_acts": [2, 3, 4],
+    "region_ids": ["raleighshire", "corcilium"],
+    "narrative_flags": {
+      "raleigh_lord": true,
+      "alice_raleigh_missing": true
+    },
+    "lore": "Edmund Raleigh é um homem marcado pela ausência. Sua esposa Alice desapareceu numa missão, e seu filho Fletcher cresceu longe, em Pelego. Agora lidera As Raposas — força militar leal à família Raleigh — enquanto tenta reconstruir o que o destino e o Triunvirato insistem em destruir. Mais sábio que poderoso, mais resiliente que brilhante."
+  },
+  {
+    "id": "alice_raleigh",
+    "name": "Alice Raleigh",
+    "family_id": "raleigh",
+    "race": "human",
+    "roles": ["lady", "summoner"],
+    "alignment": "ally",
+    "is_rival": false,
+    "faction_ids": [],
+    "demon_species_ids": [],
+    "status": "missing",
+    "available_in_acts": [3, 4],
+    "region_ids": [],
+    "narrative_flags": {
+      "cavendish_mission_trigger": true,
+      "raleigh_matriarch": true
+    },
+    "lore": "Alice Raleigh desapareceu durante a missão que eliminou todos os invocadores da família Cavendish. O que exatamente aconteceu naquela missão — e onde ela está — é um dos mistérios mais pesados que Edmund Raleigh carrega. Para Fletcher, a mãe é uma ausência que forma."
+  },
+  {
+    "id": "fletcher_raleigh",
+    "name": "Fletcher Raleigh",
+    "family_id": "raleigh",
+    "race": "human",
+    "roles": ["summoner", "student"],
+    "alignment": "ally",
+    "is_rival": false,
+    "faction_ids": [],
+    "demon_species_ids": ["griforuja", "salamandra"],
+    "status": "alive",
+    "available_in_acts": [1, 2, 3, 4],
+    "region_ids": ["pelego", "corcilium", "raleighshire"],
+    "narrative_flags": {
+      "canonical_protagonist": true,
+      "commoner_raised": true,
+      "berdon_connection": true
+    },
+    "lore": "Fletcher cresceu em Pelego, criado pelo ferreiro Berdon sem saber de sua origem nobre. Descobriu ser invocador por acidente e chegou a Vocans sem nome, sem influência e sem a menor ideia do que o esperava. Possui uma Griforuja e — de forma única — uma Salamandra, criatura que não existe na região de Hominum do Éter. O personagem canônico da trilogia; no jogo, serve como referência narrativa e pode aparecer como NPC aliado dependendo das escolhas do jogador."
+  },
+  {
+    "id": "lorde_cavell",
+    "name": "Lorde Cavell",
+    "title": "Lorde",
+    "family_id": "cavell",
+    "race": "human",
+    "roles": ["lord"],
+    "alignment": "antagonist",
+    "is_rival": false,
+    "faction_ids": ["triumvirate"],
+    "demon_species_ids": [],
+    "status": "alive",
+    "available_in_acts": [2, 3, 4],
+    "region_ids": ["corcilium"],
+    "narrative_flags": {
+      "triumvirate_member": true,
+      "cavell_patriarch": true
+    },
+    "lore": "O patriarca da família Cavell. Pouco se sabe sobre ele além de sua posição no Triunvirato e de ser pai de Didric. Homem de poucas palavras e muita influência — o tipo que nunca suja as próprias mãos quando tem um filho disposto a fazê-lo."
+  },
+  {
+    "id": "didric_cavell",
+    "name": "Didric Cavell",
+    "family_id": "cavell",
+    "race": "human",
+    "roles": ["lord", "summoner"],
+    "alignment": "antagonist",
+    "is_rival": true,
+    "faction_ids": ["triumvirate"],
+    "demon_species_ids": ["araq"],
+    "army_name": "Os Carcereiros",
+    "status": "alive",
+    "available_in_acts": [1, 2, 3, 4],
+    "region_ids": ["pelego", "corcilium"],
+    "narrative_flags": {
+      "pelego_prison_trigger": true,
+      "triumvirate_enforcer": true,
+      "pelego_lord": true,
+      "araq_veneno_imune": true
+    },
+    "lore": "Didric Cavell é a face visível da crueldade do Triunvirato. Ex-colega de Fletcher em Pelego, transformou o vilarejo em cidade-prisão após o início do Triunvirato. Seu Araq — aranha enorme com veneno que mata com uma gota — é uma extensão de sua personalidade: paciente, calculista e letal. Comanda Os Carcereiros com mão de ferro. O jogador o encontra cedo e cuja sombra nunca desaparece completamente."
+  },
+  {
+    "id": "lorde_faversham",
+    "name": "Lorde Faversham",
+    "title": "Lorde",
+    "family_id": "faversham",
+    "race": "human",
+    "roles": ["lord"],
+    "alignment": "antagonist",
+    "is_rival": false,
+    "faction_ids": ["triumvirate"],
+    "demon_species_ids": [],
+    "status": "alive",
+    "available_in_acts": [2, 3, 4],
+    "region_ids": ["corcilium"],
+    "narrative_flags": {
+      "triumvirate_member": true,
+      "arcturo_illegitimate_father": true
+    },
+    "lore": "O terceiro pilar do Triunvirato. Lorde Faversham controla grande parte do comércio de armas e munição de Hominum — e usa essa posição para moldar a política do reino a seu favor. Tem um filho ilegítimo, Arcturo, cuja existência complica sua reputação entre a nobreza."
+  },
+  {
+    "id": "lady_faversham",
+    "name": "Lady Faversham",
+    "family_id": "faversham",
+    "race": "human",
+    "roles": ["lady"],
+    "alignment": "neutral",
+    "is_rival": false,
+    "faction_ids": [],
+    "demon_species_ids": [],
+    "status": "alive",
+    "available_in_acts": [2, 3],
+    "region_ids": ["corcilium"],
+    "narrative_flags": {
+      "faversham_matriarch": true
+    },
+    "lore": "Lady Faversham é uma figura discreta na política de Corcilium. Ciente da existência de Arcturo — o filho ilegítimo de seu marido — escolheu o silêncio como estratégia. Um silêncio que fala alto para quem sabe ouvi-lo."
+  },
+  {
+    "id": "faversham_daughter",
+    "name": "Filha Faversham",
+    "family_id": "faversham",
+    "race": "human",
+    "roles": ["lady", "student"],
+    "alignment": "unknown",
+    "is_rival": false,
+    "faction_ids": [],
+    "demon_species_ids": [],
+    "status": "alive",
+    "available_in_acts": [1, 2],
+    "region_ids": ["corcilium"],
+    "narrative_flags": {
+      "faversham_heir_legitimate": true
+    },
+    "lore": "A filha legítima da família Faversham. Sua história e papel na narrativa ainda estão por ser definidos — ela existe à sombra de um pai poderoso e de um meio-irmão que complica tudo."
+  },
+  {
+    "id": "arcturo_faversham",
+    "name": "Arcturo Faversham",
+    "family_id": "faversham",
+    "race": "human",
+    "roles": ["teacher", "summoner"],
+    "alignment": "complex",
+    "is_rival": false,
+    "faction_ids": [],
+    "demon_species_ids": ["canideo"],
+    "status": "alive",
+    "available_in_acts": [1, 2, 3, 4],
+    "region_ids": ["corcilium"],
+    "narrative_flags": {
+      "vocans_teacher": true,
+      "illegitimate_faversham": true,
+      "canideo_sacarissa": true,
+      "triumvirate_distanced": true
+    },
+    "lore": "Filho ilegítimo de Lorde Faversham, Arcturo é o professor mais marcante de Vocans — e o mais difícil de categorizar. Carrega o nome Faversham sem carregar seus ideais. Sua Canídeo Sacarissa é leal como ele, e tão feroz quanto necessário. Arcturo conhece os segredos do Triunvirato por dentro, mas escolheu Vocans em vez da política familiar. Essa escolha tem um custo que o jogador vai descobrir."
+  },
+  {
+    "id": "rei_harold",
+    "name": "Harold",
+    "title": "Rei",
+    "family_id": "realeza",
+    "race": "human",
+    "roles": ["king"],
+    "alignment": "complex",
+    "is_rival": false,
+    "faction_ids": [],
+    "demon_species_ids": [],
+    "status": "alive",
+    "available_in_acts": [2, 3, 4],
+    "region_ids": ["corcilium"],
+    "narrative_flags": {
+      "throne_of_hominum": true,
+      "inquisition_inherited": true,
+      "pinkertons_inherited": true
+    },
+    "lore": "Harold herdou o trono de seu pai Alfric — e junto com ele a Inquisição e os Pinkertons. Um rei que governa sobre forças que não escolheu criar e que não sabe ao certo como controlar. Sua relação com o Triunvirato é tensa: eles têm poder, ele tem legitimidade. Por enquanto, nenhum dos dois pode prescindir do outro."
+  },
+  {
+    "id": "rei_alfric",
+    "name": "Alfric",
+    "title": "Rei",
+    "family_id": "realeza",
+    "race": "human",
+    "roles": ["king"],
+    "alignment": "neutral",
+    "is_rival": false,
+    "faction_ids": ["inquisition", "pinkertons"],
+    "demon_species_ids": [],
+    "status": "deceased",
+    "available_in_acts": [],
+    "region_ids": [],
+    "narrative_flags": {
+      "created_inquisition": true,
+      "created_pinkertons": true,
+      "former_king": true
+    },
+    "lore": "O rei anterior de Hominum. Alfric criou a Inquisição para encontrar plebeus com habilidade de invocar demônios — e os Pinkertons para manter a ordem civil. Suas razões eram pragmáticas: Hominum precisava de invocadores, viessem de onde viessem. Morreu antes de ver o legado dessas criações se tornar algo além de seu controle."
+  },
+  {
+    "id": "uthread_thorsager",
+    "name": "Uthread Thorsager",
+    "family_id": "thorsager",
+    "race": "dwarf",
+    "roles": ["lord"],
+    "alignment": "ally",
+    "is_rival": false,
+    "faction_ids": [],
+    "demon_species_ids": [],
+    "status": "alive",
+    "available_in_acts": [2, 3, 4],
+    "region_ids": ["corcilium", "raleighshire"],
+    "narrative_flags": {
+      "thorsager_patriarch": true,
+      "atila_dead_grief": true
+    },
+    "lore": "Patriarca da família Thorsager. Anão de poucos sorrisos e muita palavra. A morte de Átila deixou uma marca que ele carrega sem mostrar — anões não lamentam em público. Mas quem o conhece bem sabe que algo mudou nele depois daquele dia."
+  },
+  {
+    "id": "briss_thorsager",
+    "name": "Briss Thorsager",
+    "family_id": "thorsager",
+    "race": "dwarf",
+    "roles": ["lady"],
+    "alignment": "ally",
+    "is_rival": false,
+    "faction_ids": [],
+    "demon_species_ids": [],
+    "status": "alive",
+    "available_in_acts": [2, 3, 4],
+    "region_ids": ["corcilium", "raleighshire"],
+    "narrative_flags": {
+      "thorsager_matriarch": true
+    },
+    "lore": "Briss Thorsager é a âncora emocional da família. Onde Uthread se fecha, ela ainda consegue falar. Onde Otelo tropeça, ela está. Perdeu Átila como todo pai perde um filho — sem razão suficiente para o tamanho da dor."
+  },
+  {
+    "id": "atila_thorsager",
+    "name": "Átila Thorsager",
+    "family_id": "thorsager",
+    "race": "dwarf",
+    "roles": ["summoner", "warrior"],
+    "alignment": "ally",
+    "is_rival": false,
+    "faction_ids": [],
+    "demon_species_ids": ["caladrio"],
+    "status": "deceased",
+    "available_in_acts": [],
+    "region_ids": [],
+    "narrative_flags": {
+      "caladrio_lost": true,
+      "thorsager_elder_son": true,
+      "death_weight_otelo": true
+    },
+    "lore": "O filho mais velho dos Thorsager. Invocador de um Caládrio — pássaro elemental de cura, rarísssimo. Morreu antes de poder usar esse dom da forma que merecia. A morte de Átila é um peso que Otelo carrega em silêncio e que define grande parte de quem ele é. No jogo, aparece apenas em memórias, diálogos e na lore de Otelo."
+  },
+  {
+    "id": "otelo_thorsager",
+    "name": "Otelo Thorsager",
+    "family_id": "thorsager",
+    "race": "dwarf",
+    "roles": ["summoner", "student"],
+    "alignment": "ally",
+    "is_rival": false,
+    "faction_ids": [],
+    "demon_species_ids": ["pyrausta", "golem"],
+    "status": "alive",
+    "available_in_acts": [1, 2, 3, 4],
+    "region_ids": ["corcilium", "raleighshire"],
+    "narrative_flags": {
+      "atila_grief_flag": true,
+      "pyrausta_bond": true,
+      "golem_salomao": true,
+      "fletcher_best_friend": true
+    },
+    "lore": "Otelo Thorsager é o melhor amigo de Fletcher Raleigh e um dos personagens mais complexos de Vocans. Anão em meio a humanos, filho sobrevivente em uma família marcada pela perda de Átila. Possui uma Pyrausta — demônio tão raro que não havia registros de captura — e um Golem chamado Salomão. Irmão da família Thorsager presente em Raleighshire. O vínculo entre Otelo e Fletcher é um dos pilares emocionais da narrativa."
+  },
+  {
+    "id": "sylvia",
+    "name": "Sylvia",
+    "family_id": "elven",
+    "race": "elf",
+    "roles": ["summoner"],
+    "alignment": "complex",
+    "is_rival": false,
+    "faction_ids": [],
+    "demon_species_ids": ["canideo"],
+    "status": "alive",
+    "available_in_acts": [2, 3, 4],
+    "region_ids": ["elven_front", "corcilium"],
+    "narrative_flags": {
+      "first_elf_summoner_after_extinction": true,
+      "elven_ether_depleted": true,
+      "canideo_sariel": true
+    },
+    "lore": "Sylvia é a primeira elfa a se tornar invocadora depois que os demônios da parte élfica do Éter foram extintos. Uma conquista que é ao mesmo tempo uma vitória pessoal e um lembrete permanente de uma perda coletiva. Sua Canídeo Sariel é mais do que um demônio — é prova de que os elfos ainda podem ter um lugar entre os invocadores. O que Sylvia fará com essa responsabilidade depende, em parte, das escolhas do jogador."
+  }
+]

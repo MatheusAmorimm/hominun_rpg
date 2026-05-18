@@ -1,0 +1,92 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "item",
+  "title": "Item",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "name", "description", "category", "value_gold", "lore"],
+  "properties": {
+    "id":          { "type": "string", "minLength": 1 },
+    "name":        { "type": "string", "minLength": 1 },
+    "description": { "type": "string" },
+    "category":    { "type": "string", "enum": ["weapon", "consumable", "misc"] },
+    "value_gold":  { "type": "integer", "minimum": 0 },
+    "weight":      { "type": "number",  "minimum": 0 },
+    "lore":        { "type": "string" },
+    "weapon_type": {
+      "type": "string",
+      "enum": ["simple_melee", "simple_ranged", "martial_melee", "martial_ranged"]
+    },
+    "damage_dice": {
+      "type": "string",
+      "pattern": "^\\d+d\\d+$",
+      "description": "Ex: '1d8', '2d6'. O combat_engine rola e soma o modificador de stat."
+    },
+    "damage_type": {
+      "type": "string",
+      "enum": ["slashing", "piercing", "bludgeoning"]
+    },
+    "stat_bonus": {
+      "type": "string",
+      "enum": ["str", "dex", "str_or_dex"],
+      "description": "Qual modificador de atributo se soma ao dano e ao ataque."
+    },
+    "properties": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": ["finesse", "light", "heavy", "two_handed", "reach",
+                 "versatile", "thrown", "ammunition", "loading", "special"]
+      }
+    },
+    "versatile_dice": {
+      "type": "string",
+      "pattern": "^\\d+d\\d+$",
+      "description": "Dano quando usada com as duas mãos (só para versatile)."
+    },
+    "range": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["normal", "long"],
+      "properties": {
+        "normal": { "type": "integer", "minimum": 1 },
+        "long":   { "type": "integer", "minimum": 1 }
+      }
+    },
+    "special": {
+      "type": "string",
+      "description": "Regra especial em texto. Ex: Khopesh — desarma no acerto se falhar save STR."
+    },
+    "effect": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["type", "value"],
+      "properties": {
+        "type":          { "type": "string" },
+        "value":         {},
+        "duration_turns":{ "type": "integer", "minimum": 1 },
+        "stat_cost":     { "type": "string", "description": "Ex: 'mana:20' — custo de recurso para usar." }
+      }
+    },
+    "quantity_per_slot": {
+      "type": "integer",
+      "minimum": 1,
+      "description": "Máximo por slot de inventário. Ex: folhas amarelas empilham até 10."
+    },
+    "quest_item": {
+      "type": "boolean",
+      "description": "Itens de quest não podem ser descartados ou vendidos."
+    },
+    "narrative_flags": {
+      "type": "object",
+      "additionalProperties": true,
+      "description": "Flags ativadas ao obter ou usar o item."
+    }
+  },
+  "if":   { "properties": { "category": { "const": "weapon" } } },
+  "then": { "required": ["weapon_type", "damage_dice", "damage_type", "stat_bonus", "properties"] },
+  "else": {
+    "if":   { "properties": { "category": { "const": "consumable" } } },
+    "then": { "required": ["effect"] }
+  }
+}

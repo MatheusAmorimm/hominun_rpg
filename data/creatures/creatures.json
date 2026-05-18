@@ -1,0 +1,765 @@
+[
+  {
+    "id": "caruncho",
+    "name": "Caruncho",
+    "level": 1,
+    "description": "O demônio mais comum da região de Hominum no Éter. Semelhante a um grande besouro voador, usado como batedor por muitos invocadores.",
+    "rarity": "common",
+    "temperament_base": "cautious",
+    "temperament_variants": ["cautious", "territorial", "social"],
+    "base_stats": { "hp": 20, "mana": 5, "strength": 3, "agility": 6, "armor": 2 },
+    "abilities": [
+      { "id": "mandible_bite",    "name": "Mordida de Mandíbulas", "type": "active",  "effect_type": "damage_physical", "description": "Ataque básico com as poderosas mandíbulas do Caruncho." },
+      { "id": "paralysis_sting",  "name": "Ferrão Paralisante",    "type": "active",  "effect_type": "paralysis",       "description": "Ferrão cruel que paralisa temporariamente o inimigo." },
+      { "id": "scout_advance",    "name": "Batedor",               "type": "passive", "effect_type": "scout",           "description": "Explora o Éter antes de demônios mais poderosos, detectando perigos." }
+    ],
+    "habitat": ["hominum_ether_region"],
+    "capture_difficulty": "easy",
+    "known_summoners": ["Rory (Malaqui)", "Genevieve (Azura)", "Lovett (Valens)"],
+    "lore": "Os Carunchos são os demônios mais comuns na região de Hominum do Éter e também fonte de alimento de várias espécies demoníacas. Os Carunchos Escaravelhos são os mais poderosos do gênero — grandes besouros voadores que variam do castanho fosco ao colorido brilhante. Muitos invocadores os usam como batedores para explorar o Éter."
+  },
+  {
+    "id": "pyrausta",
+    "name": "Pyrausta",
+    "level": 2,
+    "description": "Demônio tão raro que não havia registros de captura até hoje. Forma de lagarto alado com partes de inseto e antenas multifuncionais.",
+    "rarity": "very_rare",
+    "temperament_base": "cautious",
+    "temperament_variants": ["cautious", "solitary"],
+    "base_stats": { "hp": 35, "mana": 15, "strength": 5, "agility": 12, "armor": 3 },
+    "abilities": [
+      { "id": "heat_sense",         "name": "Sensor de Calor",       "type": "passive", "effect_type": "scout",           "description": "Antenas funcionam como sensor de calor, captando variações térmicas do ambiente." },
+      { "id": "vibration_detect",   "name": "Detecção de Vibração",  "type": "passive", "effect_type": "scout",           "description": "Detecta vibrações no ar e umidade, antecipando movimentos." },
+      { "id": "winged_tail_slash",  "name": "Golpe Alado",           "type": "active",  "effect_type": "damage_physical", "description": "Ataque veloz com as asas e cauda em forma de lagarto." }
+    ],
+    "habitat": ["hominum_ether_region", "volcanic_zones"],
+    "capture_difficulty": "legendary",
+    "known_summoners": ["Otelo Thorsager"],
+    "lore": "Pyraustas são tão raros que, até sua primeira captura, não havia registros de sua existência. Sua forma de lagarto alado parece ser composta pelas partes de um inseto. As antenas multifuncionais funcionam como sensor de calor, captam a vibração do ar e detectam umidade — tornando-os impossíveis de surpreender."
+  },
+  {
+    "id": "donzela",
+    "name": "Donzela",
+    "level": 3,
+    "description": "Demônio-inseto semelhante a uma libélula gigante com carapaça iridescente. Extremamente veloz no ar e parente dos Carunchos.",
+    "rarity": "uncommon",
+    "temperament_base": "territorial",
+    "temperament_variants": ["territorial", "aggressive", "cautious"],
+    "base_stats": { "hp": 55, "mana": 10, "strength": 8, "agility": 20, "armor": 4 },
+    "abilities": [
+      { "id": "aerial_dash",       "name": "Investida Aérea",       "type": "active",  "effect_type": "damage_physical", "description": "Ataque em alta velocidade, mudando de direção num piscar de olhos." },
+      { "id": "triple_sting",      "name": "Ferrão Triplo",         "type": "active",  "effect_type": "paralysis",       "description": "Ferrão até 3 vezes mais letal que o do Caruncho, paralisa por mais tempo." }
+    ],
+    "habitat": ["hominum_ether_region"],
+    "capture_difficulty": "moderate",
+    "known_summoners": ["Verity Faversham"],
+    "lore": "Um demônio-inseto — uma libélula gigante com carapaça iridescente e asas. Essas criaturas são velozes no ar, mudando de direção num piscar de olhos. Parentes dos Carunchos, têm ferrões até 3 vezes mais letais e são comuns no Éter."
+  },
+  {
+    "id": "kamaitachi",
+    "name": "Kamaitachi",
+    "level": 3,
+    "description": "Demônio similar a uma doninha, com placas ósseas serrilhadas no lugar das patas. Comum nos domínios órquicos do Éter.",
+    "rarity": "uncommon",
+    "temperament_base": "aggressive",
+    "temperament_variants": ["aggressive", "territorial"],
+    "base_stats": { "hp": 60, "mana": 8, "strength": 12, "agility": 16, "armor": 6 },
+    "abilities": [
+      { "id": "serrated_slash",   "name": "Corte Serrilhado",   "type": "active",  "effect_type": "damage_physical", "description": "Placas ósseas serrilhadas nas patas causam ferimentos profundos." },
+      { "id": "frontal_charge",   "name": "Carga Frontal",      "type": "active",  "effect_type": "damage_physical", "description": "Lança-se contra o inimigo com velocidade de doninha, mirando linhas de frente." }
+    ],
+    "habitat": ["orc_ether_region"],
+    "capture_difficulty": "hard",
+    "known_summoners": [],
+    "lore": "Demônio similar a uma doninha, com placas ósseas serrilhadas no lugar das patas. Comum nos domínios órquicos do Éter, sempre atacam as linhas de frente de Hominum."
+  },
+  {
+    "id": "vespe",
+    "name": "Vespe",
+    "level": 4,
+    "description": "Semelhante a uma vespa gigante. Voa em enxames e possui ferrão tão potente quanto o da Donzela. Favorito dos xamãs orcs.",
+    "rarity": "uncommon",
+    "temperament_base": "territorial",
+    "temperament_variants": ["territorial", "aggressive", "social"],
+    "base_stats": { "hp": 70, "mana": 15, "strength": 10, "agility": 18, "armor": 5 },
+    "abilities": [
+      { "id": "venom_sting",      "name": "Ferrão Venenoso",    "type": "active",   "effect_type": "damage_venom",    "description": "Ferrão potente que injeta veneno paralisante." },
+      { "id": "mandible_crush",   "name": "Esmagamento de Mandíbulas", "type": "active", "effect_type": "damage_physical", "description": "Fortes mandíbulas causam dano devastador em alvos presos." },
+      { "id": "swarm_assault",    "name": "Ataque em Enxame",   "type": "reaction", "effect_type": "swarm",           "description": "Vespes convocam seus pares quando ameaçados, tornando a captura extremamente difícil." }
+    ],
+    "habitat": ["orc_ether_region", "hominum_ether_region"],
+    "capture_difficulty": "hard",
+    "known_summoners": [],
+    "lore": "Parecidos com uma vespa gigante, são difíceis de capturar porque voam em enxames. Dotados de um ferrão tão potente quanto o da Donzela e fortes mandíbulas, são um dos favoritos dos xamãs orcs."
+  },
+  {
+    "id": "estirge",
+    "name": "Estirge",
+    "level": 4,
+    "description": "Parece com uma coruja de penas vermelhas e quatro garras. Extremamente agressivo — mata e come seus irmãos ao atingir a maturidade.",
+    "rarity": "uncommon",
+    "temperament_base": "aggressive",
+    "temperament_variants": ["aggressive", "cruel"],
+    "base_stats": { "hp": 75, "mana": 12, "strength": 14, "agility": 16, "armor": 4 },
+    "abilities": [
+      { "id": "four_claw_rake",      "name": "Rasgo das Quatro Garras", "type": "active",   "effect_type": "damage_physical", "description": "Ataque simultâneo com as quatro garras, causando múltiplas lacerações." },
+      { "id": "cannibal_frenzy",     "name": "Frenesi Canibal",         "type": "reaction", "effect_type": "damage_physical", "description": "Quando ameaçado, entra em frenesi, aumentando o dano mas ignorando aliados." }
+    ],
+    "habitat": ["hominum_ether_region"],
+    "capture_difficulty": "hard",
+    "known_summoners": ["Inquisidor Damian Rook"],
+    "lore": "Bastante confundido com a Griforuja, o Estirge se parece com corujas, mas tem quatro garras. As penas são vermelhas, dando a ele uma aparência amedrontadora. Raramente são capturados por conta de sua natureza agressiva — Estirges matam e comem seus irmãos quando atingem a maturidade."
+  },
+  {
+    "id": "griforuja",
+    "name": "Griforuja",
+    "level": 4,
+    "description": "Combinação de gato e coruja. Inteligente e ágil, cria laços fortes com seu invocador. Solitário por natureza.",
+    "rarity": "rare",
+    "temperament_base": "loyal",
+    "temperament_variants": ["loyal", "solitary", "protective"],
+    "base_stats": { "hp": 80, "mana": 20, "strength": 16, "agility": 22, "armor": 7 },
+    "abilities": [
+      { "id": "beak_strike",   "name": "Bico Afiado",      "type": "active", "effect_type": "damage_physical", "description": "Bico poderoso desfere golpes precisos de alta penetração." },
+      { "id": "claw_grasp",    "name": "Garras Prensoras", "type": "active", "effect_type": "damage_physical", "description": "Garras prendem o inimigo, reduzindo sua agilidade temporariamente." }
+    ],
+    "habitat": ["hominum_ether_region"],
+    "capture_difficulty": "moderate",
+    "known_summoners": ["Fletcher Raleigh"],
+    "lore": "É uma combinação de gato e coruja, próxima dos Grifos e dos Chamrosh, porém mais raro. O bico e as garras são sua maior arma, mas é a inteligência e agilidade que fazem dele um demônio tão desejado. Solitário por natureza, cria laços fortes com seu invocador e demônios companheiros."
+  },
+  {
+    "id": "lutra",
+    "name": "Lutra",
+    "level": 4,
+    "description": "Semelhante a uma lontra supercrescida com cauda espinhosa como maça-estrela e enormes dentes incisivos. Gosta de nadar em lagos e rios do Éter.",
+    "rarity": "uncommon",
+    "temperament_base": "territorial",
+    "temperament_variants": ["territorial", "protective", "aggressive"],
+    "base_stats": { "hp": 85, "mana": 10, "strength": 18, "agility": 14, "armor": 8 },
+    "abilities": [
+      { "id": "mace_tail",       "name": "Cauda Maça-Estrela", "type": "active",  "effect_type": "damage_physical", "description": "Cauda espinhosa causa dano devastador em área ao redor do demônio." },
+      { "id": "incisor_bite",    "name": "Mordida Incisiva",   "type": "active",  "effect_type": "damage_physical", "description": "Enormes dentes incisivos triturar armaduras e ossos." },
+      { "id": "aquatic_hunter",  "name": "Predador Aquático",  "type": "passive", "effect_type": "scout",           "description": "Em ambientes aquáticos, ganha bônus de agilidade e detecta presas na água." }
+    ],
+    "habitat": ["ether_lakes", "ether_rivers"],
+    "capture_difficulty": "moderate",
+    "known_summoners": ["Rufus", "Atlas (Bárbaro)"],
+    "lore": "Este demônio do tamanho de um cão é muito semelhante a uma lontra supercrescida, com uma cauda espinhosa como uma maça-estrela e dois enormes dentes incisivos. Geralmente são encontradas nos lagos e rios do Éter, pois gostam particularmente de nadar."
+  },
+  {
+    "id": "picanco",
+    "name": "Picanço",
+    "level": 4,
+    "description": "Ave demoníaca migratória com envergadura equivalente à altura de um homem e bico cruelmente curvado. Suas migrações anuais tornam o Éter extremamente perigoso.",
+    "rarity": "uncommon",
+    "temperament_base": "territorial",
+    "temperament_variants": ["territorial", "aggressive", "social"],
+    "base_stats": { "hp": 75, "mana": 8, "strength": 14, "agility": 20, "armor": 5 },
+    "abilities": [
+      { "id": "wing_buffet",      "name": "Golpe de Asa",       "type": "active",   "effect_type": "damage_physical", "description": "Asa com envergadura de homem derruba inimigos com força bruta." },
+      { "id": "cruel_beak",       "name": "Bico Cruel",         "type": "active",   "effect_type": "damage_physical", "description": "Bico cruelmente curvado perfura armaduras com precisão." },
+      { "id": "migration_rush",   "name": "Pressa Migratória",  "type": "reaction", "effect_type": "damage_physical", "description": "Durante a migração anual, o dano e a agilidade aumentam significativamente." }
+    ],
+    "habitat": ["hominum_ether_region"],
+    "capture_difficulty": "hard",
+    "known_summoners": ["Amber"],
+    "lore": "Estes demônios com aspecto de ave cruzam anualmente a parte de Hominum do Éter durante sua migração, tornando incursões extremamente perigosas durante uma semana do ano. O bico de um Picanço é cruelmente curvado, com uma barbela em vermelho brilhante na garganta e uma crista vermelha no alto da cabeça, como um galo."
+  },
+  {
+    "id": "raiju",
+    "name": "Raiju",
+    "level": 5,
+    "description": "Híbrido de esquilo, guaxinim e mangusto com pelos azul-escuros. Alto mana e ataque elétrico capaz de matar um orc. Apenas cinco foram capturados.",
+    "rarity": "very_rare",
+    "temperament_base": "unpredictable",
+    "temperament_variants": ["unpredictable", "loyal", "cautious"],
+    "base_stats": { "hp": 90, "mana": 80, "strength": 12, "agility": 24, "armor": 6 },
+    "abilities": [
+      { "id": "lightning_strike",  "name": "Raio",               "type": "active",  "effect_type": "damage_electric", "description": "Ataque elétrico capaz de matar um orc adulto com um único golpe." },
+      { "id": "static_burst",      "name": "Explosão Estática",  "type": "active",  "effect_type": "damage_electric", "description": "Libera energia elétrica em área ao redor, afetando múltiplos inimigos." }
+    ],
+    "habitat": ["hominum_ether_region", "mountain_peaks"],
+    "capture_difficulty": "extreme",
+    "known_summoners": ["Cress Freyja"],
+    "lore": "Tão raro que apenas cinco foram capturados até hoje. Um híbrido de esquilo, guaxinim e mangusto, tem olhos grandes e amarelos e pelos azul-escuros, com espirais e listras irregulares em cerceta. Têm um alto mana e seu ataque de eletricidade é capaz de matar um orc. Gosta de dormir na barriga de seu invocador."
+  },
+  {
+    "id": "enfield",
+    "name": "Enfield",
+    "level": 5,
+    "description": "Mais raro e menor que o Vulpídeo. Cabeça de raposa, patas de águia, tronco de galgo e quartos de lobo. Garras frontais extremamente afiadas.",
+    "rarity": "rare",
+    "temperament_base": "noble",
+    "temperament_variants": ["noble", "loyal", "cautious"],
+    "base_stats": { "hp": 95, "mana": 30, "strength": 18, "agility": 22, "armor": 8 },
+    "abilities": [
+      { "id": "eagle_claw_front",  "name": "Garras de Águia",   "type": "active", "effect_type": "damage_physical", "description": "Patas dianteiras de águia rasgam com garras extremamente afiadas." },
+      { "id": "wolf_bite",         "name": "Mordida de Lobo",   "type": "active", "effect_type": "damage_physical", "description": "Mandíbulas de galgo e quartos de lobo combinados num ataque devastador." }
+    ],
+    "habitat": ["hominum_ether_region"],
+    "capture_difficulty": "hard",
+    "known_summoners": ["Verity Faversham"],
+    "lore": "É mais raro e menor que seu primo, o Vulpídeo, e é do tamanho de um grande cão. Tem cabeça de raposa, patas dianteiras de águia, tronco de galgo e quartos traseiros de lobo. Suas garras frontais são afiadas e as penas castanhas se misturam aos pelos vermelhos e cinza."
+  },
+  {
+    "id": "chamrosh",
+    "name": "Chamrosh",
+    "level": 5,
+    "description": "Híbrido de cão e falcão. Conhecido por lealdade e natureza amorosa. Um dos demônios mais utilizados pelo Corpo Celestial.",
+    "rarity": "rare",
+    "temperament_base": "loyal",
+    "temperament_variants": ["loyal", "protective", "social"],
+    "base_stats": { "hp": 95, "mana": 25, "strength": 16, "agility": 20, "armor": 7 },
+    "abilities": [
+      { "id": "loyal_guard",      "name": "Guarda Leal",        "type": "passive", "effect_type": "scout",           "description": "Sentirá a dor do invocador e reagirá instintivamente para protegê-lo." },
+      { "id": "falcon_dive",      "name": "Mergulho de Falcão", "type": "active",  "effect_type": "damage_physical", "description": "Ataca em mergulho veloz de altitude, causando dano massivo com as garras." }
+    ],
+    "habitat": ["hominum_ether_region", "mountain_peaks"],
+    "capture_difficulty": "moderate",
+    "known_summoners": [],
+    "lore": "Esse híbrido de cão e falcão é bem menor que seu parente, o Grifo. O Chamrosh é conhecido por sua lealdade e natureza amorosa. Se sentirá sozinho se separado do seu mestre. Um dos demônios mais utilizados pelo Corpo Celestial, também é um favorito entre os invocadores."
+  },
+  {
+    "id": "salamandra",
+    "name": "Salamandra",
+    "level": 5,
+    "description": "Extremamente rara. Do tamanho de um furão, pele vermelho profundo e olhos âmbar de coruja. Imune ao fogo. Inexistente na região de Hominum do Éter.",
+    "rarity": "very_rare",
+    "temperament_base": "loyal",
+    "temperament_variants": ["loyal", "protective", "unpredictable"],
+    "base_stats": { "hp": 90, "mana": 70, "strength": 14, "agility": 18, "armor": 8 },
+    "abilities": [
+      { "id": "fire_immunity",       "name": "Imunidade ao Fogo",     "type": "passive", "effect_type": "damage_fire",     "description": "Completamente imune a dano de fogo e calor extremo." },
+      { "id": "ember_bite",          "name": "Mordida Flamejante",    "type": "active",  "effect_type": "damage_fire",     "description": "O focinho afiado como bico de tartaruga concentra calor num ponto preciso." },
+      { "id": "volcanic_adaptation", "name": "Adaptação Vulcânica",   "type": "passive", "effect_type": "scout",           "description": "Sobrevive em zonas vulcânicas do Éter onde outros demônios não conseguem." }
+    ],
+    "habitat": ["volcanic_zones"],
+    "capture_difficulty": "extreme",
+    "known_summoners": ["Fletcher (Ignácio)", "Fletcher Raleigh"],
+    "lore": "Salamandras são extremamente raras e não existem na região de Hominum do Éter. Do tamanho de um furão, com corpo ágil e flexível. Sua pele é de um vermelho profundo, a cor de um bom vinho tinto, com olhos grandes de brilho âmbar, redondos como os de uma coruja. São imunes ao fogo e, se expostos continuamente à lava vulcânica, podem se metamorfosear."
+  },
+  {
+    "id": "araq",
+    "name": "Araq",
+    "level": 6,
+    "description": "Enorme aranha quase do tamanho de um javali. Feitiço de seda, ferrão letal com veneno e pelos que cegam. Apenas seu invocador é imune.",
+    "rarity": "rare",
+    "temperament_base": "cruel",
+    "temperament_variants": ["cruel", "territorial", "aggressive"],
+    "base_stats": { "hp": 110, "mana": 35, "strength": 22, "agility": 18, "armor": 12 },
+    "abilities": [
+      { "id": "web_snare",      "name": "Laço de Seda",       "type": "active", "effect_type": "silk",            "description": "Lança seda que prende o inimigo, impedindo movimentos por turnos." },
+      { "id": "lethal_venom",   "name": "Ferrão Letal",       "type": "active", "effect_type": "damage_venom",   "description": "Veneno extremamente potente. Uma dose pode matar um humano." },
+      { "id": "hair_volley",    "name": "Chuva de Pelos",     "type": "active", "effect_type": "blind",           "description": "Lança pelos das costas no ar, ferindo e cegando oponentes em área." }
+    ],
+    "habitat": ["orc_ether_region", "hominum_ether_region"],
+    "capture_difficulty": "extreme",
+    "known_summoners": ["Didric Cavell"],
+    "lore": "O Araq é uma enorme aranha, quase do tamanho de um javali. Suas oito patas habilidosas permitem que o demônio salte até 3 metros. O Araq tem 3 fortes habilidades: feitiço de seda, ferrão com veneno letal e a capacidade de lançar pelos das costas no ar, ferindo e até cegando seus oponentes. Apenas seu invocador é imune."
+  },
+  {
+    "id": "matriarca_picanco",
+    "name": "Matriarca Picanço",
+    "level": 6,
+    "description": "Líder maternal de uma revoada de Picanços. Quase duas vezes maior que o Picanço médio. Não deve ser subestimada.",
+    "rarity": "rare",
+    "temperament_base": "aggressive",
+    "temperament_variants": ["aggressive", "protective"],
+    "base_stats": { "hp": 120, "mana": 10, "strength": 24, "agility": 18, "armor": 10 },
+    "abilities": [
+      { "id": "leader_strike",    "name": "Golpe da Líder",      "type": "active",   "effect_type": "damage_physical", "description": "Ataque poderoso de uma Picanço duas vezes maior que o normal." },
+      { "id": "maternal_rage",    "name": "Fúria Maternal",      "type": "reaction", "effect_type": "swarm",           "description": "Quando ameaçada, convoca a revoada inteira para contra-atacar." }
+    ],
+    "habitat": ["hominum_ether_region"],
+    "capture_difficulty": "extreme",
+    "known_summoners": [],
+    "lore": "A Matriarca Picanço é a líder maternal de uma revoada de Picanços. Quase duas vezes maior que o Picanço médio, esses demônios não devem ser subestimados. Não é raro que uma Matriarca capture filhotes de Canídeo quando a oportunidade se apresenta."
+  },
+  {
+    "id": "cascanho",
+    "name": "Cascanho",
+    "level": 6,
+    "description": "Demônio com forma de texugo e pele grossa como casca de árvore. Camufla-se no topo de troncos e dispara farpas venenosas da espinha.",
+    "rarity": "uncommon",
+    "temperament_base": "cautious",
+    "temperament_variants": ["cautious", "territorial"],
+    "base_stats": { "hp": 115, "mana": 8, "strength": 20, "agility": 10, "armor": 20 },
+    "abilities": [
+      { "id": "bark_camouflage",  "name": "Camuflagem de Casca",  "type": "passive", "effect_type": "camouflage",      "description": "Pele quase indistinguível da casca de árvore. Dificuldade de detecção elevada." },
+      { "id": "spine_volley",     "name": "Chuva de Farpas",      "type": "active",  "effect_type": "damage_venom",   "description": "Dispara crista de farpas venenosas da espinha dorsal em área." },
+      { "id": "plate_crush",      "name": "Esmagamento de Placas", "type": "active", "effect_type": "damage_physical", "description": "Boca cheia de placas tritura vegetação — e ossos — com igual facilidade." }
+    ],
+    "habitat": ["ether_forest_zones"],
+    "capture_difficulty": "hard",
+    "known_summoners": ["Serafim (Farpa)"],
+    "lore": "Este demônio com forma de texugo tem pele grossa quase indistinguível da casca das árvores, vantagem que usa para se camuflar nas selvas do Éter. Apesar de relativamente comum, sua tendência a se esconder no topo dos troncos, além da crista de farpas venenosas, tornam difícil sua captura. Dieta exclusivamente vegetal."
+  },
+  {
+    "id": "vulpideo",
+    "name": "Vulpídeo",
+    "level": 6,
+    "description": "Parente próximo do Canídeo. Demônio com aparência de raposa, três caudas e notável agilidade e rapidez.",
+    "rarity": "rare",
+    "temperament_base": "unpredictable",
+    "temperament_variants": ["unpredictable", "territorial", "solitary"],
+    "base_stats": { "hp": 105, "mana": 20, "strength": 20, "agility": 28, "armor": 6 },
+    "abilities": [
+      { "id": "triple_tail_sweep", "name": "Varredura das Três Caudas", "type": "active", "effect_type": "damage_physical", "description": "As três caudas golpeiam em arco, atingindo múltiplos inimigos." },
+      { "id": "fox_agility",       "name": "Agilidade de Raposa",      "type": "passive", "effect_type": "scout",           "description": "Velocidade e agilidade superiores dificultam acertos do inimigo." }
+    ],
+    "habitat": ["hominum_ether_region"],
+    "capture_difficulty": "hard",
+    "known_summoners": ["Penélope"],
+    "lore": "Um parente próximo e um tanto menor do Canídeo, este demônio com aparência de raposa tem três caudas e é conhecido pela agilidade e rapidez."
+  },
+  {
+    "id": "caladrio",
+    "name": "Caládrio",
+    "level": 7,
+    "description": "Pássaro elemental com penas brancas de pomba e poderes de cura. Alto mana. Vive acima das nuvens onde o ar é rarefeito demais para outros demônios.",
+    "rarity": "rare",
+    "temperament_base": "noble",
+    "temperament_variants": ["noble", "protective", "cautious"],
+    "base_stats": { "hp": 120, "mana": 90, "strength": 10, "agility": 22, "armor": 5 },
+    "abilities": [
+      { "id": "healing_light",     "name": "Luz Curativa",         "type": "active",  "effect_type": "heal",   "description": "Poderes de cura únicos restauram HP do invocador ou demônios aliados." },
+      { "id": "high_altitude",     "name": "Voo em Alta Altitude", "type": "passive", "effect_type": "scout",  "description": "Sobrevive acima das nuvens do Éter onde o ar é rarefeito para outros demônios." }
+    ],
+    "habitat": ["above_clouds"],
+    "capture_difficulty": "extreme",
+    "known_summoners": ["Átila Thorsager"],
+    "lore": "Um dos pássaros elementais, o Caládrio é próximo da Fênix nascida nas chamas, a gélida Polárion e a relampejante Alcione. Com penas brancas de pomba, o alto mana desse demônio e seus poderes de cura são muito desejados. Passam a maior parte do tempo acima das nuvens do Éter, onde o ar é muito rarefeito para outros demônios."
+  },
+  {
+    "id": "fenix",
+    "name": "Fênix",
+    "level": 7,
+    "description": "Enorme pássaro com plumas alaranjadas e longa cauda de pavão. Mana altíssimo, lança fogo como a Salamandra. O mais raro das aves primas.",
+    "rarity": "very_rare",
+    "temperament_base": "aggressive",
+    "temperament_variants": ["aggressive", "territorial", "unpredictable"],
+    "base_stats": { "hp": 135, "mana": 85, "strength": 22, "agility": 25, "armor": 8 },
+    "abilities": [
+      { "id": "fire_breath_fenix",  "name": "Sopro de Fogo",      "type": "active",  "effect_type": "damage_fire", "description": "Lança fogo como a Salamandra, queimando áreas inteiras." },
+      { "id": "fire_aura",          "name": "Aura Flamejante",    "type": "passive", "effect_type": "damage_fire", "description": "Aura de calor extremo causa dano a quem se aproxima demais." }
+    ],
+    "habitat": ["volcanic_zones"],
+    "capture_difficulty": "legendary",
+    "known_summoners": [],
+    "lore": "Um pássaro enorme com plumas alaranjadas e uma longa cauda de pavão. A Fênix é o mais raro das aves primas. Com um mana muito alto e capaz de lançar fogo como a Salamandra, esses demônios supostamente habitam as proximidades de vulcões ativos no Éter."
+  },
+  {
+    "id": "alcione",
+    "name": "Alcione",
+    "level": 7,
+    "description": "Ave elemental com penas brilhantes e metálicas. Garras muito afiadas, mana elevado e golpe de energia da cauda. Única desvantagem: é muito nobre.",
+    "rarity": "rare",
+    "temperament_base": "noble",
+    "temperament_variants": ["noble", "solitary"],
+    "base_stats": { "hp": 130, "mana": 80, "strength": 24, "agility": 26, "armor": 10 },
+    "abilities": [
+      { "id": "energy_tail_blast",  "name": "Explosão de Energia",  "type": "active",  "effect_type": "damage_electric", "description": "Golpe de energia lançado pela cauda com alto alcance e dano." },
+      { "id": "metallic_talon",     "name": "Garras Metálicas",     "type": "active",  "effect_type": "damage_physical", "description": "Garras muito afiadas, reforçadas pelas penas metálicas que recobrem o corpo." }
+    ],
+    "habitat": ["above_clouds", "mountain_peaks"],
+    "capture_difficulty": "extreme",
+    "known_summoners": [],
+    "lore": "É a mais comum das quatro aves dos elementos, com penas brilhantes e metálicas que fazem brilhar quando voa. Com garras muito afiadas, mana elevado e a habilidade de lançar um golpe de energia da cauda, sua única desvantagem é ser muito nobre."
+  },
+  {
+    "id": "polarion",
+    "name": "Polárion",
+    "level": 7,
+    "description": "Ave elemental dos mares do Éter. Plumagem azul-escura e barriga branca. Habilidade rarísssima de congelar inimigos. Alto mana.",
+    "rarity": "rare",
+    "temperament_base": "cautious",
+    "temperament_variants": ["cautious", "territorial", "solitary"],
+    "base_stats": { "hp": 130, "mana": 80, "strength": 20, "agility": 22, "armor": 8 },
+    "abilities": [
+      { "id": "freeze_strike",      "name": "Golpe Congelante",    "type": "active",  "effect_type": "freeze",          "description": "Habilidade rarísssima de congelar completamente o inimigo por um turno." },
+      { "id": "sea_hunter",         "name": "Caçador dos Mares",   "type": "passive", "effect_type": "scout",           "description": "Usa as habilidades congelantes para caçar presas que saltam da água." }
+    ],
+    "habitat": ["ether_seas"],
+    "capture_difficulty": "extreme",
+    "known_summoners": [],
+    "lore": "Voam sobre os mares no Éter, usando suas habilidades congelantes para caçar qualquer presa que salta para fora d'água. Poucos avistamentos reportam plumagem azul-escura e barriga branca. Com mana alto e a habilidade rarísssima de congelar seus inimigos, é uma ótima aquisição para qualquer invocador."
+  },
+  {
+    "id": "canideo",
+    "name": "Canídeo",
+    "level": 7,
+    "description": "Demônio canino com quatro olhos, garras letais, rabo de raposa e crista espessa na espinha. Tamanho entre cachorro grande e pequeno pônei.",
+    "rarity": "rare",
+    "temperament_base": "loyal",
+    "temperament_variants": ["loyal", "protective", "territorial"],
+    "base_stats": { "hp": 140, "mana": 30, "strength": 28, "agility": 20, "armor": 12 },
+    "abilities": [
+      { "id": "four_eye_vision",    "name": "Visão de Quatro Olhos", "type": "passive", "effect_type": "scout",           "description": "Quatro olhos tornam impossível a aproximação furtiva e revelam demônios camuflados." },
+      { "id": "lethal_claw",        "name": "Garra Letal",           "type": "active",  "effect_type": "damage_physical", "description": "Garras letais rasgam com força devastadora." },
+      { "id": "fox_tail_sweep",     "name": "Varredura de Rabo",     "type": "active",  "effect_type": "damage_physical", "description": "Rabo de raposa desfere golpe lateral inesperado." }
+    ],
+    "habitat": ["hominum_ether_region", "orc_ether_region"],
+    "capture_difficulty": "hard",
+    "known_summoners": ["Sylva (Sariel)", "Arcturo (Sacarissa)"],
+    "lore": "Um demônio canino com quatro olhos, garras letais, rabo de raposa e uma crista espessa de pelos que corre pela espinha. O tamanho desses demônios varia entre o de um cachorro grande e um pequeno pônei."
+  },
+  {
+    "id": "felideo",
+    "name": "Felídeo",
+    "level": 7,
+    "description": "Gato-demônio bípede com a estatura e inteligência de um chimpanzé. Raças incluem leonino, tigrino e leopardino.",
+    "rarity": "rare",
+    "temperament_base": "aggressive",
+    "temperament_variants": ["aggressive", "territorial", "unpredictable"],
+    "base_stats": { "hp": 135, "mana": 25, "strength": 30, "agility": 26, "armor": 10 },
+    "abilities": [
+      { "id": "claw_strike_feline",  "name": "Garras de Felino",    "type": "active",  "effect_type": "damage_physical", "description": "Garras de grande felino dilaceram armadura e carne com facilidade." },
+      { "id": "bipedal_pounce",      "name": "Salto Bípede",        "type": "active",  "effect_type": "damage_physical", "description": "Salta de grande distância usando postura bípede para ganhar impulso." },
+      { "id": "feline_intellect",    "name": "Intelecto Felino",    "type": "passive", "effect_type": "scout",           "description": "Inteligência de chimpanzé permite interpretar ordens mentais complexas do invocador." }
+    ],
+    "habitat": ["hominum_ether_region", "ether_forest_zones"],
+    "capture_difficulty": "hard",
+    "known_summoners": ["Isadora (Tamil)", "Cipião"],
+    "lore": "Este gato-demônio bípede tem a estatura e a inteligência de um chimpanzé. Suas raças variam entre leonino, tigrino e leopardino, que são semelhantes a leões, tigres e leopardos, respectivamente."
+  },
+  {
+    "id": "alicornio",
+    "name": "Alicórnio",
+    "level": 8,
+    "description": "Cavalo com asas de cisne e um único chifre. Raramente capturado por sua velocidade no ar e na terra. Rebanhos cruzam o Éter a cada década.",
+    "rarity": "very_rare",
+    "temperament_base": "noble",
+    "temperament_variants": ["noble", "solitary", "cautious"],
+    "base_stats": { "hp": 155, "mana": 50, "strength": 30, "agility": 35, "armor": 12 },
+    "abilities": [
+      { "id": "horn_pierce",        "name": "Chifre Perfurante",   "type": "active",  "effect_type": "damage_physical", "description": "Chifre único concentra força cinética num ponto, penetrando qualquer defesa." },
+      { "id": "aerial_escape",      "name": "Fuga Aérea",          "type": "reaction","effect_type": "scout",           "description": "Velocidade no ar e na terra torna quase impossível a captura por força." }
+    ],
+    "habitat": ["hominum_ether_region", "above_clouds"],
+    "capture_difficulty": "extreme",
+    "known_summoners": [],
+    "lore": "Um cavalo com asas de cisne e apenas um chifre. Esses demônios equinos dificilmente são capturados, graças a sua velocidade no ar e na terra. Seus rebanhos atravessam as áreas de Hominum do Éter uma vez a cada década. Os que são lentos o bastante para serem capturados tendem a ser os que estão doentes, machucados, ou ainda são muito novos."
+  },
+  {
+    "id": "hipogrifo",
+    "name": "Hipogrifo",
+    "level": 8,
+    "description": "Híbrido de águia e cavalo. Rápido na terra mas usa mais bico e cascos que garras. Popular no Corpo Celestial.",
+    "rarity": "rare",
+    "temperament_base": "loyal",
+    "temperament_variants": ["loyal", "noble", "social"],
+    "base_stats": { "hp": 155, "mana": 20, "strength": 28, "agility": 30, "armor": 10 },
+    "abilities": [
+      { "id": "beak_drive",         "name": "Mergulho de Bico",    "type": "active",  "effect_type": "damage_physical", "description": "Bico de águia em mergulho de alta velocidade causa dano massivo." },
+      { "id": "hoof_kick",          "name": "Coice de Casco",      "type": "active",  "effect_type": "damage_physical", "description": "Cascos de cavalo em coice traseiro causam dano brutal em área próxima." }
+    ],
+    "habitat": ["mountain_peaks", "hominum_ether_region"],
+    "capture_difficulty": "hard",
+    "known_summoners": [],
+    "lore": "É um híbrido de águia e cavalo. Apesar de ser rápido na terra, não tem tanta força nas garras como o Grifo. Por isso, usa mais seus golpes com o bico e os cascos. É popular no Corpo Celestial, perdendo apenas para o Periton."
+  },
+  {
+    "id": "anubideo",
+    "name": "Anubídeo",
+    "level": 8,
+    "description": "Parente distante do Canídeo. Raro demônio bípede com cabeça de chacal. Ao contrário dos primos, tem apenas dois olhos.",
+    "rarity": "very_rare",
+    "temperament_base": "noble",
+    "temperament_variants": ["noble", "loyal", "cautious"],
+    "base_stats": { "hp": 155, "mana": 40, "strength": 30, "agility": 24, "armor": 14 },
+    "abilities": [
+      { "id": "jackal_bite",        "name": "Mordida de Chacal",   "type": "active",  "effect_type": "damage_physical", "description": "Cabeça de chacal com mandíbulas poderosas tritura ossos com facilidade." },
+      { "id": "bipedal_strike",     "name": "Golpe Bípede",        "type": "active",  "effect_type": "damage_physical", "description": "Postura bípede permite combinações de golpes com patas e mordida." }
+    ],
+    "habitat": ["orc_ether_region"],
+    "capture_difficulty": "extreme",
+    "known_summoners": ["Malik", "Baybars"],
+    "lore": "Outro parente distante do Canídeo, este raro demônio anda sobre duas pernas e tem a cabeça de um chacal. Ao contrário dos outros membros da família, ele tem apenas dois olhos."
+  },
+  {
+    "id": "golem",
+    "name": "Golem",
+    "level": 8,
+    "description": "Demônio elemental formado por minerais: argila, lama, areia ou pedra. Filhotes com um metro, adultos atingem três metros. Aparência humanoide.",
+    "rarity": "rare",
+    "temperament_base": "protective",
+    "temperament_variants": ["protective", "loyal", "cautious"],
+    "base_stats": { "hp": 170, "mana": 15, "strength": 40, "agility": 8, "armor": 35 },
+    "abilities": [
+      { "id": "stone_fist",         "name": "Punho de Pedra",      "type": "active",  "effect_type": "damage_physical", "description": "Soco devastador com o único dedo enorme e polegar opositor de pedra." },
+      { "id": "rock_armor",         "name": "Armadura de Rocha",   "type": "passive", "effect_type": "damage_physical", "description": "Corpo de pedra absorve dano físico que destruiria qualquer outro demônio." },
+      { "id": "elemental_form",     "name": "Forma Elemental",     "type": "passive", "effect_type": "scout",           "description": "Pode se fundir com paredes e solos minerais para descanso ou fuga." }
+    ],
+    "habitat": ["mountain_peaks", "volcanic_zones", "ether_caves"],
+    "capture_difficulty": "hard",
+    "known_summoners": ["Otelo (Salomão)"],
+    "lore": "Este raro demônio da classe elemental pode ser formado por vários tipos diferentes de minerais, incluindo argila, lama e areia, sendo o mais poderoso o Golem de pedra. Filhotes têm pouco mais de um metro, mas ao longo do tempo podem alcançar três metros de altura. Têm aparência mais ou menos humanoide, porém possuem apenas um enorme dedo e um polegar opositor nas mãos."
+  },
+  {
+    "id": "hidra",
+    "name": "Hidra",
+    "level": 8,
+    "description": "Grande demônio com três cabeças de cobra em pescoços longos. Corpo de lagarto monitor. Outrora comum no Éter de Hominum, agora extremamente rara.",
+    "rarity": "rare",
+    "temperament_base": "aggressive",
+    "temperament_variants": ["aggressive", "territorial", "cruel"],
+    "base_stats": { "hp": 165, "mana": 20, "strength": 35, "agility": 14, "armor": 15 },
+    "abilities": [
+      { "id": "triple_head_strike", "name": "Ataque das Três Cabeças", "type": "active", "effect_type": "damage_venom",   "description": "Três cabeças de cobra atacam simultaneamente, injetando veneno em múltiplos alvos." },
+      { "id": "neck_constrict",     "name": "Constrição de Pescoço",   "type": "active", "effect_type": "paralysis",       "description": "Pescoços longos e flexíveis imobilizam o inimigo por compressão." }
+    ],
+    "habitat": ["ether_lakes", "ether_rivers"],
+    "capture_difficulty": "extreme",
+    "known_summoners": ["Tarquin"],
+    "lore": "Uma Hidra é um grande demônio com três cabeças de cobra em pescoços longos e flexíveis. Seu corpo é similar ao de um lagarto monitor, com mais ou menos o mesmo tamanho de um Canídeo grande. Esses demônios já foram outrora comuns na parte de Hominum do Éter, mas agora são extremamente raros."
+  },
+  {
+    "id": "nanauê",
+    "name": "Nanauê",
+    "level": 9,
+    "description": "Tubarão humanoide com postura de chimpanzé. Favorito dos xamãs orcs. Excelente em escaladas e saltos. Existe em diversas espécies.",
+    "rarity": "rare",
+    "temperament_base": "aggressive",
+    "temperament_variants": ["aggressive", "territorial", "cruel"],
+    "base_stats": { "hp": 180, "mana": 15, "strength": 40, "agility": 30, "armor": 16 },
+    "abilities": [
+      { "id": "shark_jaw_crush",    "name": "Esmagamento de Tubarão", "type": "active",  "effect_type": "damage_physical", "description": "Presas e mandíbulas ferozes de tubarão causam dano devastador." },
+      { "id": "shark_claw_rake",    "name": "Rasgo de Garra Aquática","type": "active",  "effect_type": "damage_physical", "description": "Garras afiadas rasgam com velocidade de predador aquático." },
+      { "id": "wall_climb",         "name": "Escalada",               "type": "passive", "effect_type": "scout",           "description": "Excelente em escaladas e pode pular grandes distâncias com impulso." }
+    ],
+    "habitat": ["orc_ether_region", "ether_seas"],
+    "capture_difficulty": "hard",
+    "known_summoners": [],
+    "lore": "Esse tubarão humanoide é um dos demônios favoritos entre os xamãs orcs, graças a suas presas e mandíbulas ferozes, garras afiadas e agilidade impressionante. Com postura mais parecida com a de um chimpanzé, é excelente em escaladas e pode pular grandes distâncias. Existe em diversas espécies: tubarão branco, martelo e tigre."
+  },
+  {
+    "id": "periton",
+    "name": "Periton",
+    "level": 9,
+    "description": "Veado grande com asas e majestosos chifres. Patas dianteiras com cascos, traseiras com garras de falcão. Favorito do Corpo Celestial.",
+    "rarity": "rare",
+    "temperament_base": "noble",
+    "temperament_variants": ["noble", "loyal", "protective"],
+    "base_stats": { "hp": 175, "mana": 30, "strength": 35, "agility": 32, "armor": 14 },
+    "abilities": [
+      { "id": "falcon_claw_tear",   "name": "Garras de Falcão",    "type": "active",  "effect_type": "damage_physical", "description": "Patas traseiras com garras de falcão causam ferimentos mortais." },
+      { "id": "antler_gore",        "name": "Chifrada",            "type": "active",  "effect_type": "damage_physical", "description": "Chifres majestosos usados como arma de impacto de alta força." },
+      { "id": "feather_tail_slash", "name": "Corte de Cauda",      "type": "active",  "effect_type": "damage_physical", "description": "Longa cauda de penas corta o ar com precisão e força surpreendentes." }
+    ],
+    "habitat": ["hominum_ether_region", "mountain_peaks"],
+    "capture_difficulty": "moderate",
+    "known_summoners": [],
+    "lore": "Favorito do Corpo Celestial, o Periton é como um veado grande com asas e majestosos chifres. As patas dianteiras terminam em cascos e as traseiras em garras como as de um falcão. No lugar da cauda dos veados, esses demônios têm uma elegante e longa cauda de penas. Como seus rebanhos atravessam as áreas de Hominum do Éter, são as montarias aladas mais comuns para os invocadores."
+  },
+  {
+    "id": "sobeks",
+    "name": "Sobeks",
+    "level": 9,
+    "description": "Enormes criaturas bípedes semelhantes a crocodilos. Garras e mandíbulas devastadoras, ou grandes caudas que espancam até a morte.",
+    "rarity": "rare",
+    "temperament_base": "aggressive",
+    "temperament_variants": ["aggressive", "territorial"],
+    "base_stats": { "hp": 190, "mana": 10, "strength": 45, "agility": 16, "armor": 20 },
+    "abilities": [
+      { "id": "jaw_crush_sobek",    "name": "Esmagamento de Crocodilo", "type": "active", "effect_type": "damage_physical", "description": "Mandíbulas de crocodilo destroçam armaduras com pressão extrema." },
+      { "id": "tail_smash",         "name": "Pancada de Cauda",         "type": "active", "effect_type": "damage_physical", "description": "Grande cauda espancada lateralmente pode matar um adversário antes das mandíbulas." },
+      { "id": "claw_rend",          "name": "Garras Rasgadoras",        "type": "active", "effect_type": "damage_physical", "description": "Garras rasgam armaduras e carne com facilidade brutal." }
+    ],
+    "habitat": ["orc_ether_region", "ether_rivers"],
+    "capture_difficulty": "hard",
+    "known_summoners": [],
+    "lore": "São enormes criaturas bípedes, semelhantes a crocodilos, que usam as garras e mandíbulas para destroçar seus oponentes, isso se suas grandes caudas não os espancarem até a morte antes."
+  },
+  {
+    "id": "oni",
+    "name": "Oni",
+    "level": 10,
+    "description": "Corpo e estatura de orc. Pele carmesim, grandes chifres e caninos superdesenvolvidos. Favorito de xamãs veteranos. Menos inteligente que carunchos.",
+    "rarity": "uncommon",
+    "temperament_base": "aggressive",
+    "temperament_variants": ["aggressive", "cruel", "unpredictable"],
+    "base_stats": { "hp": 195, "mana": 20, "strength": 48, "agility": 18, "armor": 18 },
+    "abilities": [
+      { "id": "berserker_charge",   "name": "Carga Berserk",       "type": "active",  "effect_type": "damage_physical", "description": "Carga devastadora usando o corpo massivo de orc como arma." },
+      { "id": "horn_gore",          "name": "Chifrada Carmesim",   "type": "active",  "effect_type": "damage_physical", "description": "Par de grandes chifres empala inimigos com força bruta." },
+      { "id": "fang_bite",          "name": "Mordida de Presas",   "type": "active",  "effect_type": "damage_physical", "description": "Caninos superdesenvolvidos penetram armaduras pesadas." }
+    ],
+    "habitat": ["orc_ether_region"],
+    "capture_difficulty": "moderate",
+    "known_summoners": [],
+    "lore": "Onis têm corpos e estaturas parecidos com os de orcs e são um dos favoritos dos xamãs veteranos. Têm a pele carmesim, um par de grandes chifres e caninos superdesenvolvidos. Apesar de parecerem espertos, são menos inteligentes que carunchos."
+  },
+  {
+    "id": "grifo",
+    "name": "Grifo",
+    "level": 10,
+    "description": "Raro demônio do tamanho de um cavalo. Corpo, cauda e patas traseiras de leão; cabeça, asas e garras de águia. Aparece ocasionalmente no Éter de Hominum.",
+    "rarity": "rare",
+    "temperament_base": "noble",
+    "temperament_variants": ["noble", "loyal", "solitary"],
+    "base_stats": { "hp": 200, "mana": 30, "strength": 50, "agility": 28, "armor": 20 },
+    "abilities": [
+      { "id": "eagle_claw_strike",  "name": "Garra de Águia",      "type": "active",  "effect_type": "damage_physical", "description": "Garras de águia tamanho cavalo causam dano devastador a qualquer armadura." },
+      { "id": "lion_tail_whip",     "name": "Golpe de Cauda de Leão","type": "active", "effect_type": "damage_physical", "description": "Cauda de leão longa e poderosa desfere golpe lateral inesperado." },
+      { "id": "aerial_dive_grifo",  "name": "Mergulho em Picada",  "type": "active",  "effect_type": "damage_physical", "description": "Mergulho em alta velocidade da altitude com as garras estendidas." }
+    ],
+    "habitat": ["hominum_ether_region", "mountain_peaks"],
+    "capture_difficulty": "extreme",
+    "known_summoners": ["Lovett (Lisandro)"],
+    "lore": "Este raro demônio ocasionalmente aparece na parte de Hominum do Éter. Do tamanho de um cavalo, tem o corpo, a cauda e as patas traseiras de um leão e a cabeça, as asas e as garras de uma águia."
+  },
+  {
+    "id": "minotauro",
+    "name": "Minotauro",
+    "level": 11,
+    "description": "Demônio humanoide alto, peludo e musculoso com cabeça de touro e cascos. Pode manipular armas, embora seja difícil ensiná-los. Muito raro no Éter de Hominum.",
+    "rarity": "very_rare",
+    "temperament_base": "aggressive",
+    "temperament_variants": ["aggressive", "territorial", "unpredictable"],
+    "base_stats": { "hp": 215, "mana": 15, "strength": 55, "agility": 18, "armor": 22 },
+    "abilities": [
+      { "id": "weapon_slash",       "name": "Golpe com Arma",      "type": "active",  "effect_type": "damage_physical", "description": "Usa mãos com garras para empunhar armas improvisadas — devastador quando treinado." },
+      { "id": "bull_charge",        "name": "Carga de Touro",      "type": "active",  "effect_type": "damage_physical", "description": "Carga frontal com cabeça de touro — derruba qualquer inimigo no caminho." },
+      { "id": "hoof_stomp",         "name": "Pisão de Casco",      "type": "active",  "effect_type": "damage_physical", "description": "Cascos fendidos esmagam o chão e inimigos derrubados com força monumental." }
+    ],
+    "habitat": ["orc_ether_region"],
+    "capture_difficulty": "extreme",
+    "known_summoners": ["Rook"],
+    "lore": "Esses demônios humanoides são altos, peludos e musculosos. Têm a cabeça de um touro e cascos fendidos no lugar dos pés. Ao contrário dos Golens, eles têm mãos com garras capazes de manipular armas, mesmo que seja uma tarefa difícil ensiná-los a usá-las. É muito raro encontrar um deles na parte de Hominum do Éter."
+  },
+  {
+    "id": "manticora",
+    "name": "Mantícora",
+    "level": 12,
+    "description": "Asas e membros de morcego, rabo de escorpião, corpo de leão com espinhos. Cabeça quase humana que expressa emoções complexas. Veneno que mata com uma gota.",
+    "rarity": "very_rare",
+    "temperament_base": "cruel",
+    "temperament_variants": ["cruel", "aggressive", "unpredictable"],
+    "base_stats": { "hp": 235, "mana": 50, "strength": 58, "agility": 26, "armor": 24 },
+    "abilities": [
+      { "id": "scorpion_tail_sting", "name": "Ferrão de Escorpião",  "type": "active",  "effect_type": "damage_venom",   "description": "Uma gota do veneno pode matar um humano. Apenas membros da família Raleigh são imunes." },
+      { "id": "spine_volley_mant",   "name": "Chuva de Espinhos",    "type": "active",  "effect_type": "damage_venom",   "description": "Espinhos afiados do pelo são lançados em área, envenenando múltiplos inimigos." },
+      { "id": "bat_wing_sweep",      "name": "Varredura de Asa",     "type": "active",  "effect_type": "damage_physical", "description": "Membros anteriores de morcego desfere golpe amplo em arco." }
+    ],
+    "habitat": ["unknown_ether_depths"],
+    "capture_difficulty": "legendary",
+    "known_summoners": ["Charles Faversham"],
+    "lore": "Esse raro demônio tem asas e membros anteriores de morcego, um rabo de escorpião e o corpo de leão, com pelo escuro misturado a espinhos afiados. A cabeça de leão aparenta ser quase humana e é capaz de expressar emoções complexas. Seu veneno é tão potente que apenas uma gota pode matar um humano. Dizem que os membros da família Raleigh são imunes a ele."
+  },
+  {
+    "id": "ifrit",
+    "name": "Ifrit",
+    "level": 12,
+    "description": "Elemental de fogo aparentado do Golem. Pele como lava, incrivelmente forte e pode lançar chamas da boca. Um dos demônios mais poderosos dos orcs.",
+    "rarity": "very_rare",
+    "temperament_base": "aggressive",
+    "temperament_variants": ["aggressive", "territorial"],
+    "base_stats": { "hp": 240, "mana": 60, "strength": 60, "agility": 20, "armor": 20 },
+    "abilities": [
+      { "id": "fire_breath_ifrit",  "name": "Sopro de Chamas",     "type": "active",  "effect_type": "damage_fire",     "description": "Lança chamas pela boca, queimando áreas amplas com calor de lava." },
+      { "id": "lava_skin",          "name": "Pele de Lava",         "type": "passive", "effect_type": "damage_fire",     "description": "Pele como lava causa dano a quem toca e fornece resistência extrema ao fogo." },
+      { "id": "elemental_strength", "name": "Força Elemental",     "type": "passive", "effect_type": "damage_physical", "description": "Força incalculável de um elemental de fogo completo." }
+    ],
+    "habitat": ["volcanic_zones", "orc_ether_region"],
+    "capture_difficulty": "legendary",
+    "known_summoners": [],
+    "lore": "É um elemental aparentado do Golem, mas formado com fogo em vez de pedra. Parente próximo do Jotun, a pele parece lava. É incrivelmente forte e pode até lançar chamas da boca. É um dos demônios mais poderosos que os orcs são capazes de capturar em suas áreas do Éter."
+  },
+  {
+    "id": "jotun",
+    "name": "Jotun",
+    "level": 13,
+    "description": "Humanoide gigante feito de gelo. Congela tudo que toca. Conhecido apenas por textos élficos antigos de autenticidade duvidosa. Vive nos picos gelados do Éter.",
+    "rarity": "legendary",
+    "temperament_base": "unpredictable",
+    "temperament_variants": ["unpredictable", "territorial", "aggressive"],
+    "base_stats": { "hp": 260, "mana": 40, "strength": 65, "agility": 12, "armor": 35 },
+    "abilities": [
+      { "id": "freeze_touch",       "name": "Toque Congelante",    "type": "active",  "effect_type": "freeze",          "description": "Congela completamente qualquer coisa que toca. Sem exceções conhecidas." },
+      { "id": "ice_giant_strike",   "name": "Golpe do Gigante",    "type": "active",  "effect_type": "damage_physical", "description": "Impacto de um gigante humanoide de gelo causa dano devastador em área." },
+      { "id": "blizzard_aura",      "name": "Aura de Nevasca",     "type": "passive", "effect_type": "freeze",          "description": "Aura permanente de frio extremo retarda o movimento de todos os inimigos próximos." }
+    ],
+    "habitat": ["mountain_peaks", "ether_glacier_zones"],
+    "capture_difficulty": "legendary",
+    "known_summoners": [],
+    "lore": "Jotuns são conhecidos apenas por uma rápida menção num texto élfico muito antigo, apesar de acadêmicos sempre duvidarem da autenticidade do texto. Descritos como humanoides gigantes que parecem ser feitos de gelo e supostamente são capazes de congelar tudo o que tocam. Dizem que vivem nos mais altos picos gelados das montanhas do Éter."
+  },
+  {
+    "id": "wendigo",
+    "name": "Wendigo",
+    "level": 13,
+    "description": "Mais de 2 metros, galhadas e cabeça de lobo. Braços longos que usa como gorila. Segue baixas nas migrações. Pele cinza e fedorenta por comer carne podre.",
+    "rarity": "very_rare",
+    "temperament_base": "cruel",
+    "temperament_variants": ["cruel", "aggressive", "unpredictable"],
+    "base_stats": { "hp": 255, "mana": 20, "strength": 62, "agility": 22, "armor": 20 },
+    "abilities": [
+      { "id": "gorilla_pound",      "name": "Pancada de Gorila",   "type": "active",  "effect_type": "damage_physical", "description": "Braços longos batem no chão como gorila — impacto sísmico em área próxima." },
+      { "id": "antler_gore_wend",   "name": "Chifrada de Wendigo", "type": "active",  "effect_type": "damage_physical", "description": "Galhadas grandes e ramificadas empalam e arremessam inimigos." },
+      { "id": "long_arm_reach",     "name": "Alcance Longo",       "type": "active",  "effect_type": "damage_physical", "description": "Braços desproporcionalmente longos permitem atacar de distância inesperada." },
+      { "id": "carrion_aura",       "name": "Aura de Carniça",     "type": "passive", "effect_type": "scout",           "description": "Odor de carne podre pode desorientar inimigos com olfato aguçado." }
+    ],
+    "habitat": ["hominum_ether_region", "orc_ether_region"],
+    "capture_difficulty": "extreme",
+    "known_summoners": ["Zacarias Forsyth"],
+    "lore": "É um demônio raro, conhecido por seguir as baixas nas migrações pelo Éter, comendo as carcaças de suas vítimas. Apesar da fama de comedor de carniça, é muito poderoso, com músculos definidos sob sua pele fina. Com mais de 2 metros de altura, galhadas e cabeça de lobo, tem braços longos que usa para bater no chão, como um gorila. A pele é manchada de cinza e fedorenta."
+  },
+  {
+    "id": "zaratan",
+    "name": "Zaratan",
+    "level": 15,
+    "description": "Gigantesca tartaruga anfíbia com cabeça reptiliana e íris dourada. Casco enorme confundido com uma ilhota. Fica muito maior com a idade.",
+    "rarity": "legendary",
+    "temperament_base": "cautious",
+    "temperament_variants": ["cautious", "territorial"],
+    "base_stats": { "hp": 300, "mana": 30, "strength": 70, "agility": 8, "armor": 60 },
+    "abilities": [
+      { "id": "shell_slam",         "name": "Impacto de Casco",    "type": "active",  "effect_type": "damage_physical", "description": "Casco enorme usado como arma — pode ser confundido com uma ilhota se parado." },
+      { "id": "jaw_snap_zaratan",   "name": "Mordida Reptiliana",  "type": "active",  "effect_type": "damage_physical", "description": "Cabeça reptiliana com íris dourada morde com pressão colossal." }
+    ],
+    "habitat": ["ether_seas", "ether_lakes"],
+    "capture_difficulty": "legendary",
+    "known_summoners": [],
+    "lore": "Demônio similar a uma gigantesca tartaruga anfíbia, com uma cabeça reptiliana e íris dourada. Seu casco enorme pode ser confundido com uma ilhota por desavisados, e podem ficar muitas vezes maiores quando chegam à idade adulta."
+  },
+  {
+    "id": "serpe",
+    "name": "Serpe",
+    "level": 15,
+    "description": "Enorme. Asas de morcego, cauda espinhosa e cabeça de crocodilo com chifres. Pele tão firme que só armas muito afiadas a ferem. A maior arma do Corpo Celestial.",
+    "rarity": "legendary",
+    "temperament_base": "aggressive",
+    "temperament_variants": ["aggressive", "territorial"],
+    "base_stats": { "hp": 310, "mana": 20, "strength": 75, "agility": 18, "armor": 55 },
+    "abilities": [
+      { "id": "croc_jaw_crush",     "name": "Mandíbulas de Crocodilo","type": "active", "effect_type": "damage_physical", "description": "Cabeças de crocodilo com chifres trituração qualquer armadura conhecida." },
+      { "id": "spine_tail_strike",  "name": "Chicote Espinhoso",      "type": "active", "effect_type": "damage_physical", "description": "Cauda espinhosa chicoteia em área ampla, perfurando múltiplos inimigos." },
+      { "id": "iron_skin",          "name": "Pele de Ferro",          "type": "passive","effect_type": "damage_physical", "description": "Pele tão firme que apenas armas muito afiadas conseguem causar ferimentos." },
+      { "id": "wing_sweep_serpe",   "name": "Varredura de Asa",       "type": "active", "effect_type": "damage_physical", "description": "Asas de morcego gigantescas arremessam inimigos em área enorme." }
+    ],
+    "habitat": ["unknown_ether_depths", "orc_ether_region"],
+    "capture_difficulty": "legendary",
+    "known_summoners": [],
+    "lore": "São as maiores armas contra os demônios do Corpo Celestial. Enormes, têm asas como as de um morcego, caudas espinhosas e cabeças de crocodilo, com chifres. Sua pele é tão firme que apenas armas muito afiadas podem lhe ferir. São mais lentos que a maioria dos demônios voadores, normalmente contando com a retaguarda de Picanços, Estirges e Vespes."
+  },
+  {
+    "id": "fantauro",
+    "name": "Fantauro",
+    "level": 20,
+    "description": "Cabeças de elefante, grandes presas, punhos robustos e mais de 3 metros de altura. O mais raro e poderoso demônio disponível para xamãs orcs. Apenas um foi visto.",
+    "rarity": "legendary",
+    "temperament_base": "aggressive",
+    "temperament_variants": ["aggressive", "unpredictable"],
+    "base_stats": { "hp": 400, "mana": 40, "strength": 80, "agility": 10, "armor": 50 },
+    "abilities": [
+      { "id": "tusk_charge",        "name": "Carga de Presas",     "type": "active",  "effect_type": "damage_physical", "description": "Carga com as enormes presas de elefante — nada resiste no caminho." },
+      { "id": "tremor_stomp",       "name": "Pisão Sísmico",       "type": "active",  "effect_type": "damage_physical", "description": "Punhos robustos e altura de 3 metros criam ondas de choque ao impactar o solo." },
+      { "id": "ancient_might",      "name": "Força Ancestral",     "type": "passive", "effect_type": "damage_physical", "description": "Poder acumulado por gerações de xamãs orcs. Reduz dano recebido de forma massiva." }
+    ],
+    "habitat": ["orc_ether_region"],
+    "capture_difficulty": "legendary",
+    "known_summoners": [],
+    "lore": "Com cabeças de elefante, grandes presas, punhos robustos e uma altura de mais de 3 metros, é uma grande força para se contar numa batalha. Sendo o mais raro e poderoso demônio disponível para xamãs orcs, apenas um foi visto. Sabemos muito pouco sobre seu comportamento e habitat. O único Fantauro já capturado passou pela posse dos xamãs orcs ao longo de suas gerações, e sua origem se perdeu no tempo."
+  }
+]

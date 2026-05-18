@@ -1,0 +1,34 @@
+[
+  {
+    "id": "noble",
+    "name": "Nobre",
+    "description": "Filho de família nobre de Hominum. A nobreza abre portas — e também cria inimigos.",
+    "initial_flags": {
+      "background_noble": true,
+      "early_rival_unlocked": true
+    },
+    "narrative_effects": ["early_rival", "political_missions"],
+    "lore": "Você cresceu com conforto e expectativas. Chegar a Vocans era inevitável — mas provar que você merece estar aqui por mérito próprio, isso é outra história. Seu rival já sabe seu nome antes de você aprender o dele."
+  },
+  {
+    "id": "commoner",
+    "name": "Plebeu",
+    "description": "Origem humilde. Chegou a Vocans por mérito próprio, sem nome ou influência para abrir portas.",
+    "initial_flags": {
+      "background_commoner": true
+    },
+    "narrative_effects": ["survival_quests", "dialogue_variants_commoner"],
+    "lore": "O plebeu não tem nome para protegê-lo em Vocans. Tem apenas seu engenho, sua força de vontade e seus demônios. Alguns professores subestimam. Isso pode ser uma vantagem."
+  },
+  {
+    "id": "war_orphan",
+    "name": "Órfão de Guerra",
+    "description": "Perdeu tudo para o conflito com os Orcs. Carrega cicatrizes invisíveis — e uma conexão inexplicável com o Éter.",
+    "initial_flags": {
+      "background_war_orphan": true,
+      "affinity_bonus_initial": 5
+    },
+    "narrative_effects": ["ether_backstory", "orc_war_dialogue"],
+    "lore": "A guerra moldou quem você é antes de você entender o que era guerra. O Éter sempre esteve mais próximo de você do que imagina — como se algo do outro lado também se lembrasse daquela noite."
+  }
+]

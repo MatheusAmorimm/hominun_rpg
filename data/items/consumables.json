@@ -1,0 +1,48 @@
+[
+  {
+    "id": "yellow_leaf",
+    "name": "Folha Amarela",
+    "description": "Folha de coloração âmbar que cresce nas regiões vulcânicas do Éter. Consumida, neutraliza o efeito tóxico da atmosfera do Éter por um período limitado.",
+    "category": "consumable",
+    "effect": {
+      "type": "ether_survival",
+      "value": true,
+      "duration_turns": 10
+    },
+    "quantity_per_slot": 10,
+    "value_gold": 20,
+    "weight": 0,
+    "lore": "As folhas amarelas são a única razão pela qual invocadores retornam do Éter com vida. Nascem nas bordas dos vulcões da dimensão — territórios que poucos ousam explorar. Quem entra no Éter sem elas conta apenas com o tempo que seu demônio consegue sustentá-lo."
+  },
+  {
+    "id": "summoning_scroll",
+    "name": "Pergaminho de Invocação",
+    "description": "Pergaminho especialmente preparado para selar um demônio do Éter. Necessário no processo de captura. Consumido ao selar a criatura.",
+    "category": "consumable",
+    "effect": {
+      "type": "demon_seal",
+      "value": true,
+      "duration_turns": 1
+    },
+    "quantity_per_slot": 5,
+    "value_gold": 50,
+    "weight": 0,
+    "lore": "Os pergaminhos de invocação são preparados pelos mestres de Vocans com tintas especiais e rituais que levam dias. Cada um é único — selado para um único demônio, consumido no instante em que o vínculo se forma. Sem ele, o demônio retorna ao Éter. Com ele, começa um pacto que dura uma vida."
+  },
+  {
+    "id": "portal_crystal",
+    "name": "Cristal de Portal",
+    "description": "Cristal especial necessário para abrir um portal para o Éter. Gasta mana do invocador para ser mantido aberto. Consumido se a mana do invocador zerar.",
+    "category": "consumable",
+    "effect": {
+      "type": "open_ether_portal",
+      "value": true,
+      "duration_turns": -1,
+      "stat_cost": "mana:5_per_turn"
+    },
+    "quantity_per_slot": 3,
+    "value_gold": 150,
+    "weight": 1,
+    "lore": "Os cristais de portal são raros e caros — produzidos apenas em Vocans e vendidos sob controle rigoroso. Cada faceta do cristal vibra em frequência com o Éter. Quando ativado, abre uma passagem entre os mundos. Quando a mana do invocador se esgota, o portal se fecha — e quem ainda estiver do outro lado fica para trás."
+  }
+]

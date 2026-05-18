@@ -1,0 +1,57 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "progression",
+  "title": "ProgressionDomain",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id","name","primary_archetype","nodes"],
+  "properties": {
+    "id":   { "type": "string", "minLength": 1 },
+    "name": { "type": "string", "minLength": 1 },
+    "primary_archetype": {
+      "type": "string",
+      "enum": ["pure_summoner","battle_mage","ether_explorer"],
+      "description": "Archetype que recebe redução de -3 no requisito de nível mínimo para nós deste domínio."
+    },
+    "nodes": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id","name","tier","min_demon_level","narrative_milestone","mana_source","description"],
+        "properties": {
+          "id":   { "type": "string", "minLength": 1 },
+          "name": { "type": "string", "minLength": 1 },
+          "tier": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 3,
+            "description": "Tier 1 = básico, Tier 2 = intermediário, Tier 3 = avançado."
+          },
+          "min_demon_level": {
+            "type": "integer",
+            "minimum": 1,
+            "description": "Nível total mínimo de demônios para poder aprender este nó. Archetype primário reduz em 3."
+          },
+          "narrative_milestone": {
+            "type": "string",
+            "minLength": 1,
+            "description": "ID ou descrição do marco narrativo que habilita o aprendizado deste nó."
+          },
+          "mana_source": {
+            "type": "string",
+            "enum": ["player","demon","both"],
+            "description": "player = usa mana base do jogador. demon = drena mana do demônio ativo. both = custo dividido."
+          },
+          "effects": {
+            "type": "object",
+            "additionalProperties": true,
+            "description": "Efeitos mecânicos do nó (bônus de stats, modificadores de combate, flags narrativas, etc.)."
+          },
+          "description": { "type": "string", "minLength": 1 }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "faction",
+  "title": "Faction",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id","name","type","alignment","goals","leader_npc_id","member_npc_ids","rival_faction_ids","allied_faction_ids","reputation_thresholds","available_in_acts","lore"],
+  "properties": {
+    "id":   { "type": "string", "minLength": 1 },
+    "name": { "type": "string", "minLength": 1 },
+    "type": {
+      "type": "string",
+      "enum": ["political","military","tribal","criminal","religious"],
+      "description": "Natureza organizacional da facção."
+    },
+    "alignment": {
+      "type": "string",
+      "enum": ["ally","neutral","antagonist","complex"],
+      "description": "complex = comportamento varia conforme raça/origem/escolhas do jogador."
+    },
+    "goals": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "type": "string", "minLength": 1 },
+      "description": "Objetivos narrativos da facção."
+    },
+    "leader_npc_id": {
+      "type": "string",
+      "description": "ID do NPC líder desta facção (referência a npcs.json)."
+    },
+    "member_npc_ids": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "IDs dos NPCs membros (referência a npcs.json)."
+    },
+    "rival_faction_ids": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "IDs de facções rivais."
+    },
+    "allied_faction_ids": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "IDs de facções aliadas."
+    },
+    "reputation_thresholds": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["hostile","unfriendly","neutral","friendly","honored"],
+      "properties": {
+        "hostile":    { "type": "integer" },
+        "unfriendly": { "type": "integer" },
+        "neutral":    { "type": "integer" },
+        "friendly":   { "type": "integer" },
+        "honored":    { "type": "integer" }
+      },
+      "description": "Limiares de reputação (-100 a +100) que determinam o status do jogador com esta facção."
+    },
+    "available_in_acts": {
+      "type": "array",
+      "items": { "type": "integer", "minimum": 1, "maximum": 4 },
+      "uniqueItems": true,
+      "description": "Atos em que esta facção é relevante narrativamente. Vazio = todos os atos."
+    },
+    "narrative_flags": {
+      "type": "object",
+      "additionalProperties": true,
+      "description": "Flags narrativas que esta facção ativa ou exige."
+    },
+    "lore": { "type": "string", "minLength": 1 }
+  }
+}

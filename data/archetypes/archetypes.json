@@ -1,0 +1,26 @@
+[
+  {
+    "id": "pure_summoner",
+    "name": "Invocador Puro",
+    "description": "Especialista em demônios e no Éter. Menor aptidão em combate direto. O vínculo mental é sua maior arma.",
+    "stat_bonuses": { "int": 1, "wis": 2 },
+    "starting_spells": [],
+    "lore": "O invocador puro confia completamente em seus demônios. Enquanto outros empunham espadas, ele fecha os olhos e sente o calor da mente do seu summon. Cada ponto de afinidade conquistado vale mais que qualquer golpe."
+  },
+  {
+    "id": "battle_mage",
+    "name": "Guerreiro Mago",
+    "description": "Combina combate corpo a corpo com fogo fátuo e magias ofensivas. Não depende apenas de seus summons.",
+    "stat_bonuses": { "str": 2, "con": 1 },
+    "starting_spells": ["foxfire"],
+    "lore": "O guerreiro mago não espera seu demônio agir. Ele próprio é uma arma — o fogo fátuo azul em sua palma e a lâmina na outra mão. Vocans treina invocadores; ele treina sobreviventes."
+  },
+  {
+    "id": "ether_explorer",
+    "name": "Explorador do Éter",
+    "description": "Especialista em sobrevivência e captura de criaturas no Éter. Ágil, resistente e paciente.",
+    "stat_bonuses": { "dex": 1, "wis": 1, "con": 1 },
+    "starting_spells": [],
+    "lore": "O explorador entende que o verdadeiro poder está nas criaturas que ninguém mais ousou capturar. Ele entra no Éter quando outros hesitam — e volta com o que os outros nunca verão."
+  }
+]

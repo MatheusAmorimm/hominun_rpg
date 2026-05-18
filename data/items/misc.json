@@ -1,0 +1,56 @@
+[
+  {
+    "id": "grimoire",
+    "name": "Grimório",
+    "description": "Volume encadernado em couro com anotações de magias e teorias arcanas. Necessário para aprender magias além do fogo fátuo básico.",
+    "category": "misc",
+    "quest_item": false,
+    "narrative_flags": {
+      "has_grimoire": true
+    },
+    "value_gold": 100,
+    "weight": 3,
+    "lore": "Todo mago de batalha sério carrega um grimório. Não é um livro de feitiços — é um diário de compreensão. Cada mago escreve o seu à mão, copiando e adaptando o que aprendeu com professores e experiências. Um grimório encontrado é uma janela para a mente de outro invocador."
+  },
+  {
+    "id": "family_relic",
+    "name": "Relíquia Familiar",
+    "description": "Objeto de valor sentimental pertencente à família do jogador. Não tem efeito mecânico direto, mas abre diálogos e missões específicas.",
+    "category": "misc",
+    "quest_item": true,
+    "narrative_flags": {
+      "has_family_relic": true,
+      "family_background_unlocked": true
+    },
+    "value_gold": 0,
+    "weight": 1,
+    "lore": "Não tem preço. Não pode ser vendida. É o único elo que resta entre quem você é e quem você foi antes de Vocans."
+  },
+  {
+    "id": "vocans_key",
+    "name": "Chave de Vocans",
+    "description": "Chave de acesso a áreas restritas da Academia de Vocans. Diferentes modelos desbloqueiam diferentes alas.",
+    "category": "misc",
+    "quest_item": true,
+    "narrative_flags": {
+      "vocans_restricted_access": true
+    },
+    "value_gold": 0,
+    "weight": 0,
+    "lore": "As chaves de Vocans são rastreadas. Cada uma tem um número de série gravado. Perder uma significa enfrentar uma audiência disciplinar — e possivelmente pior."
+  },
+  {
+    "id": "recommendation_letter",
+    "name": "Carta de Recomendação",
+    "description": "Carta selada de um nobre ou professor de Vocans. Reduz penalidade social para Orcs e facilita negociações em Corcilium.",
+    "category": "misc",
+    "quest_item": false,
+    "narrative_flags": {
+      "has_recommendation": true,
+      "social_penalty_reduced": true
+    },
+    "value_gold": 0,
+    "weight": 0,
+    "lore": "Para um orc em Corcilium, uma carta de recomendação não é apenas papel — é armadura. O preconceito não desaparece, mas o nome de quem assina a carta faz as pessoas pensarem duas vezes antes de agir."
+  }
+]
